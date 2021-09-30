@@ -1,0 +1,62 @@
+.sliderSection ~ .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .col-md-4 {
+        height: 860px;
+        div {
+            padding: 20px 15px;
+            background: #f4f0f3;
+            border-radius: 12px;
+            height: 100%;
+            h3 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 127%;
+                color: #1b1464;
+                span {
+                    color: #75246f;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 24px;
+                color: #808080;
+                span{
+                    color: #75246f;
+                    font-size: 18px;
+                }
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                width: fit-content;
+                text-decoration: none;
+                background: #75246f;
+                border-radius: 8px;
+                padding: 8px 16px;
+                font-weight: 500;
+                font-size: 12px;
+                span {
+                    margin-left: 10px;
+                }
+            }
+
+            ul li {
+                line-height: 25px;
+                color: #808080;
+            }
+        }
+
+        div.towPart {
+            height: calc(55% - 20px);
+            margin-bottom: 40px;
+            &:nth-child(1){
+                height: calc(45% - 20px);
+
+            }
+        }
+    }
+}
