@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import './SASS/_functions.scss';
+
+
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.topOval {
+    position: absolute;
+    left: -14.72%;
+    right: 57.17%;
+    top: -5.53%;
+    bottom: 90.7%;
+    display: none;
+}
+
+.main_back {
+    background-color: #75246f !important;
+    color: #fff !important;
+}
+
+
+/* Start nav bar Style */
+
+.container {
+    width: 95%;
+}
+// nav
+@import './SASS/_nav.scss';
+
+// header
+@import './SASS/_header.scss';
+
+
+
