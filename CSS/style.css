@@ -410,23 +410,23 @@ header .row .images .img2 {
 }
 
 .technologies .row .img1 {
-  background-image: url(../../images/technologies/tec1.png);
+  background-image: url(../images/technologies/tec1.png);
 }
 
 .technologies .row .img2 {
-  background-image: url(../../images/technologies/tec2.png);
+  background-image: url(../images/technologies/tec2.png);
 }
 
 .technologies .row .img3 {
-  background-image: url(../../images/technologies/tec3.png);
+  background-image: url(../images/technologies/tec3.png);
 }
 
 .technologies .row .img4 {
-  background-image: url(../../images/technologies/tec4.png);
+  background-image: url(../images/technologies/tec4.png);
 }
 
 .technologies .row .img5 {
-  background-image: url(../../images/technologies/tec5.png);
+  background-image: url(../images/technologies/tec5.png);
 }
 
 .technologies .row.active {
