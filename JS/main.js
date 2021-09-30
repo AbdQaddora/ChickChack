@@ -18,3 +18,17 @@ function slidChanger(x) {
     document.querySelector(`.sliderSection .row:nth-child(${currentSlid})`).classList.add("active");
     document.querySelector(`.sliderSection .row:nth-child(${currentSlid}) .indicator:nth-child(${currentSlid})`).classList.add("active");
 }
+
+let currentTecSlid = 1;
+document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.add("active");
+document.querySelector(` .TecController .indicator:nth-child(${currentTecSlid})`).classList.add("active");
+
+function TecSlidChanger(x) {
+    document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.remove("active");
+    document.querySelector(` .TecController .indicator:nth-child(${currentTecSlid})`).classList.remove("active");
+
+    currentTecSlid = x;
+
+    document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.add("active");
+    document.querySelector(` .TecController .indicator:nth-child(${currentTecSlid})`).classList.add("active");
+}

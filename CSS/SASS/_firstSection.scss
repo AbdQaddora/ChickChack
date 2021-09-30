@@ -1,7 +1,12 @@
-.sliderSection ~ .container {
+.grid {
     margin-top: 60px;
-    margin-bottom: 60px;
-    .col-md-4 {
+    margin-bottom: 95px;
+    .col-md-7{
+        .container-fluid{
+            padding: 0;
+        }
+    }
+    .col-md-5 , .col-md-6 {
         height: 860px;
         div {
             padding: 20px 15px;
@@ -34,7 +39,6 @@
                 align-items: center;
                 width: fit-content;
                 text-decoration: none;
-                background: #75246f;
                 border-radius: 8px;
                 padding: 8px 16px;
                 font-weight: 500;
@@ -51,12 +55,8 @@
         }
 
         div.towPart {
-            height: calc(55% - 20px);
-            margin-bottom: 40px;
-            &:nth-child(1){
-                height: calc(45% - 20px);
-
-            }
+            height: calc(50% - 15px);
+            margin-bottom: 30px;
         }
     }
 }

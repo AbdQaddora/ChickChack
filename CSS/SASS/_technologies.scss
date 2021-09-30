@@ -1,0 +1,105 @@
+.TecController {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    .indicator {
+        transition: background-color 0.3s ease-in-out;
+        font-size: 16px;
+        line-height: 53px;
+        letter-spacing: -0.165px;
+        color: #979797;
+        padding: 0px 14px;
+        background: rgba(218, 218, 218, 0.28);
+        border-radius: 123px;
+    }
+
+    .active {
+        background: #75246f;
+        color: #fff;
+    }
+}
+
+.technologies {
+    position: relative;
+    height: 538px;
+    .row {
+        transition: opacity 0.5s ease-in-out;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        margin-top: 75px;
+        opacity: 0;
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h2 {
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 53px;
+                letter-spacing: -0.165px;
+                color: #1b1464;
+                width: 100%;
+                span {
+                    color: #75246f;
+                }
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 42px;
+                letter-spacing: -0.165px;
+                color: #b59db3;
+            }
+
+            li {
+                color: #a3a3a3;
+                font-weight: normal;
+                font-size: 19px;
+                line-height: 42px;
+            }
+
+            .btn {
+                width: fit-content;
+                font-size: 24px;
+                line-height: 36px;
+                border-radius: 12px;
+                padding: 15px 32px;
+            }
+        }
+
+        .img {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+        }
+
+        .img1 {
+            background-image: url(../../images/technologies/tec1.png);
+        }
+
+        .img2 {
+            background-image: url(../../images/technologies/tec2.png);
+        }
+
+        .img3 {
+            background-image: url(../../images/technologies/tec3.png);
+        }
+
+        .img4 {
+            background-image: url(../../images/technologies/tec4.png);
+        }
+
+        .img5 {
+            background-image: url(../../images/technologies/tec5.png);
+        }
+    }
+    .row.active {
+        opacity: 1;
+    }
+}
