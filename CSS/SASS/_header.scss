@@ -1,0 +1,117 @@
+header {
+    margin-top: 137px;
+    min-height: 432px;
+    position: relative;
+    .circle{
+        position: absolute;
+        width: 276px;
+        height: 276px;
+        left: -57px * 2;
+        top: 50px;
+        border-radius: 50%;
+        z-index: -1;
+        background-color: #AC5EA40D;
+    }
+    .row.active{
+        opacity: 1;
+    }
+    .row {
+        transition: opacity 0.5s ease-in-out;
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        .content {
+            h2 {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 72px;
+                line-height: 108%;
+                color: #1b1464;
+                span {
+                    color: #75246f;
+                }
+                margin-bottom: 18px;
+            }
+
+            ul li{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color:#808080;
+            }  
+
+            p ~ ul{
+                margin-bottom: 63px;
+            } 
+            p {
+                margin-bottom: 63px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 30px;
+                color: #808080;
+
+                span {
+                    color: #1b1464;
+                    font-weight: 600;
+                }
+            }
+
+            p.hasUlAftter{
+                margin-bottom: calc(33px/2);
+            }
+            .main_back {
+                border-radius: 12px;
+                padding: 15px 32px !important;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 36px;
+            }
+        }
+        .images {
+            position: relative;
+            .indicators {
+                justify-self: center;
+                display: flex;
+                justify-content: space-between;
+                width: 227px;
+                margin-top: 15px;
+                position: relative;
+                top: -38px;
+                left: 50%;
+                transform:translateX(-50%) ;
+                .indicator {
+                    cursor: pointer;
+                    display: block;
+                    width: 39px;
+                    height: 8px;
+                    border-radius: 13px;
+                    background: rgba(218, 218, 218, 0.34);
+                    @include blur(13px);
+                }
+                .indicator.active {
+                    background: #75246f;
+                    @include blur(0px);
+                }
+            }
+            .img {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat ;
+                background-size: contain;
+                background-position: center;
+            }
+            
+            .img1{
+                background-image: url(../images/logo.svg);
+            }
+            
+            .img2{
+                background-image: url(../images/logo.svg);
+            } 
+        }
+    }
+}

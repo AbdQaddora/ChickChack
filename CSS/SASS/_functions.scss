@@ -1,0 +1,15 @@
+@mixin blur($value) {
+    -webkit-backdrop-filter: blur($value);
+    -moz-backdrop-filter: blur($value);
+    -ms-backdrop-filter: blur($value);
+    -o-backdrop-filter: blur($value);
+    backdrop-filter: blur($value);
+}
+
+@mixin shadow($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    -ms-box-shadow:$value;
+    -o-box-shadow: $value;
+    box-shadow: $value
+}

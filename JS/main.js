@@ -17,4 +17,4 @@ function slidChanger(x) {
 
     document.querySelector(`.sliderSection .row:nth-child(${currentSlid})`).classList.add("active");
     document.querySelector(`.sliderSection .row:nth-child(${currentSlid}) .indicator:nth-child(${currentSlid})`).classList.add("active");
-}
+}S
