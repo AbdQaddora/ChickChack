@@ -1,9 +1,9 @@
+
 .TecController {
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 50px;
     .indicator {
         transition: background-color 0.3s ease-in-out;
         font-size: 16px;
@@ -24,12 +24,12 @@
 .technologies {
     position: relative;
     height: 538px;
+    margin-top: 75px;
     .row {
         transition: opacity 0.5s ease-in-out;
         position: absolute;
         height: 100%;
         width: 100%;
-        margin-top: 75px;
         opacity: 0;
         .content {
             display: flex;
@@ -103,3 +103,4 @@
         opacity: 1;
     }
 }
+

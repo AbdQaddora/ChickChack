@@ -1,12 +1,14 @@
+@import "./SASS/_functions.scss";
 .grid {
     margin-top: 60px;
     margin-bottom: 95px;
-    .col-md-7{
-        .container-fluid{
+    .col-md-7 {
+        .container-fluid {
             padding: 0;
         }
     }
-    .col-md-5 , .col-md-6 {
+    .col-md-5,
+    .col-md-6 {
         height: 860px;
         div {
             padding: 20px 15px;
@@ -28,7 +30,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #808080;
-                span{
+                span {
                     color: #75246f;
                     font-size: 18px;
                 }
