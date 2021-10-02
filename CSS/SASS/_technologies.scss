@@ -1,17 +1,20 @@
-
 .TecController {
     width: 80%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     .indicator {
+        cursor: pointer;
+        @include userSelect(none);
         transition: background-color 0.3s ease-in-out;
+        padding: 0px 14px;
+
         font-size: 16px;
         line-height: 53px;
         letter-spacing: -0.165px;
         color: #979797;
-        padding: 0px 14px;
         background: rgba(218, 218, 218, 0.28);
+        
         border-radius: 123px;
     }
 
@@ -103,4 +106,3 @@
         opacity: 1;
     }
 }
-

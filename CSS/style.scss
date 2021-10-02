@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
-@import './SASS/_functions.scss';
-
+@import "./SASS/_functions.scss";
 
 /* font-family: 'Poppins', sans-serif; */
 
@@ -22,6 +21,41 @@
     color: #fff !important;
 }
 
+// scroll bar
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+}
+::-webkit-scrollbar-button {
+    width: 9px;
+    height: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c33cba;
+    border: 20px none #ffffff00;
+    border-radius: 78px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #75246f;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #75246f;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff00;
+    border: 0px none #ffffff00;
+    border-radius: 79px;
+}
+::-webkit-scrollbar-track:hover {
+    background: #7524702d;
+}
+::-webkit-scrollbar-track:active {
+    background: #7524702d;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
 
 /* Start nav bar Style */
 
@@ -29,19 +63,19 @@
     width: 95%;
 }
 // nav
-@import './SASS/_nav.scss';
+@import "./SASS/_nav.scss";
 
 // header
-@import './SASS/_header.scss';
+@import "./SASS/_header.scss";
 
 // first Section
-@import './SASS/_firstSection.scss';
+@import "./SASS/_firstSection.scss";
 
 // technologies
-@import './SASS/_technologies.scss';
+@import "./SASS/_technologies.scss";
 
 // technologies
-@import './SASS/_about.scss';
+@import "./SASS/_about.scss";
 
-
-
+// technologies
+@import "./SASS/_download.scss";

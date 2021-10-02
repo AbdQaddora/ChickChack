@@ -1,18 +1,18 @@
 header {
-    margin-top: 137px;
-    min-height: 630px;
+    margin-top: 15vh;
+    height: 70vh;
     position: relative;
-    .circle{
+    .circle {
         position: absolute;
-        width: 276px;
-        height: 276px;
+        width: 18.5vw;
+        height: 18.5vw;
         left: -57px * 2;
-        top: 50px;
+        top: 5.5vh;
         border-radius: 50%;
         z-index: -1;
-        background-color: #AC5EA40D;
+        background-color: #ac5ea40d;
     }
-    .row.active{
+    .row.active {
         opacity: 1;
     }
     .row {
@@ -31,22 +31,22 @@ header {
                 span {
                     color: #75246f;
                 }
-                margin-bottom: 18px;
+                margin-bottom: 2vh;
             }
 
-            ul li{
+            ul li {
                 font-style: normal;
                 font-weight: normal;
                 font-size: 20px;
                 line-height: 30px;
-                color:#808080;
-            }  
+                color: #808080;
+            }
 
-            p ~ ul{
-                margin-bottom: 63px;
-            } 
+            p ~ ul {
+                margin-bottom: 7vh;
+            }
             p {
-                margin-bottom: 63px;
+                margin-bottom: 7vh;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 20px;
@@ -59,9 +59,10 @@ header {
                 }
             }
 
-            p.hasUlAftter{
-                margin-bottom: calc(33px/2);
+            p.hasUlAftter {
+                margin-bottom: 1.83vh;
             }
+
             .main_back {
                 border-radius: 12px;
                 padding: 15px 32px !important;
@@ -77,16 +78,15 @@ header {
                 justify-self: center;
                 display: flex;
                 justify-content: space-between;
-                width: 227px;
-                margin-top: 15px;
+                width: 15.7vw;
                 position: relative;
-                top: -38px;
+                top: -4.22vh;
                 left: 50%;
-                transform:translateX(-50%) ;
+                transform: translateX(-50%);
                 .indicator {
                     cursor: pointer;
                     display: block;
-                    width: 39px;
+                    width: 2.7vw;
                     height: 8px;
                     border-radius: 13px;
                     background: rgba(218, 218, 218, 0.34);
@@ -97,21 +97,22 @@ header {
                     @include blur(0px);
                 }
             }
+            
             .img {
                 width: 100%;
                 height: 100%;
-                background-repeat: no-repeat ;
+                background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
             }
-            
-            .img1{
+
+            .img1 {
                 background-image: url(../images/logo.svg);
             }
-            
-            .img2{
+
+            .img2 {
                 background-image: url(../images/logo.svg);
-            } 
+            }
         }
     }
 }

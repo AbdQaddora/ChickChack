@@ -1,7 +1,6 @@
-@import "./SASS/_functions.scss";
 .grid {
-    margin-top: 60px;
-    margin-bottom: 95px;
+    margin-top: 6.66vh;
+    margin-bottom: 10.55vh;
     .col-md-7 {
         .container-fluid {
             padding: 0;
@@ -56,8 +55,12 @@
             }
         }
 
+        div.towPart:first-child {
+            height: calc(45% - 15px);
+            margin-bottom: 30px;
+        }
         div.towPart {
-            height: calc(50% - 15px);
+            height: calc(55% - 15px);
             margin-bottom: 30px;
         }
     }
