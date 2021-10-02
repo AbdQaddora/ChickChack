@@ -3,7 +3,7 @@
     margin-bottom: 10.55vh;
     .col-md-7 {
         .container-fluid {
-            padding: 0;
+            padding: 0 !important;
         }
     }
     .col-md-5,
@@ -55,12 +55,8 @@
             }
         }
 
-        div.towPart:first-child {
-            height: calc(45% - 15px);
-            margin-bottom: 30px;
-        }
         div.towPart {
-            height: calc(55% - 15px);
+            height: calc(50% - 15px);
             margin-bottom: 30px;
         }
     }

@@ -1,6 +1,6 @@
 .navbar {
     padding-top: 0 !important;
-    .container {
+    .container-fluid {
         padding: 3.66vh 0px;
         .navbar-nav {
             align-items: center;
@@ -47,8 +47,13 @@
                     background-color: #fff;
                     border: 2px solid #75246f;
                     margin-right: 20px;
+                    transition: all 0.25s ease-in-out;
+                    &:hover {
+                        background: #75246f;
+                        color: #ffffff !important;
+                    }
                 }
-                
+
                 .nav-item:nth-child(2) .nav-link {
                     padding: 11px 45px !important;
                     border: 2px solid #75246f;

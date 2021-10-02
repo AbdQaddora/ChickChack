@@ -59,8 +59,9 @@
 
 /* Start nav bar Style */
 
-.container {
-    width: 95%;
+.container-fluid {
+    padding-left: 2vw !important;
+    padding-right: 2vw !important;
 }
 // nav
 @import "./SASS/_nav.scss";
@@ -74,8 +75,11 @@
 // technologies
 @import "./SASS/_technologies.scss";
 
-// technologies
+// _about
 @import "./SASS/_about.scss";
 
-// technologies
+// _download
 @import "./SASS/_download.scss";
+
+// technologies
+// @import "./SASS/_mobile.scss";
