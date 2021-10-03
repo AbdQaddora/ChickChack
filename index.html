@@ -62,7 +62,15 @@
     </nav>
 
     <!-- start Header -->
-    <header class="container-fluid sliderSection">
+    <section class="container-fluid sliderSection">
+        <div class="indicators">
+            <span class="indicator" onclick="slidChanger(1)"></span>
+            <span class="indicator" onclick="slidChanger(2)"></span>
+            <span class="indicator" onclick="slidChanger(3)"></span>
+            <span class="indicator" onclick="slidChanger(4)"></span>
+            <span class="indicator" onclick="slidChanger(5)"></span>
+        </div>
+
         <div class="row">
             <div class="content col-md-7">
                 <h2> Your mirror to
@@ -76,17 +84,11 @@
                 </p>
                 <a href="" class="btn main_back">Stand out! Join us Now</a>
             </div>
-            <div class="images col-md-5">
-                <div class="indicators">
-                    <span class="indicator" onclick="slidChanger(1)"></span>
-                    <span class="indicator" onclick="slidChanger(2)"></span>
-                    <span class="indicator" onclick="slidChanger(3)"></span>
-                    <span class="indicator" onclick="slidChanger(4)"></span>
-                    <span class="indicator" onclick="slidChanger(5)"></span>
-                </div>
+            <div class="col-md-5">
                 <div class="img img1"></div>
             </div>
         </div>
+
         <div class="row">
             <div class="content col-md-7">
                 <h2>CREATE, CONNECT,
@@ -99,13 +101,7 @@
                 <a href="" class="btn main_back">Stand out! Join us Now</a>
             </div>
             <div class="images col-md-5">
-                <div class="indicators">
-                    <span class="indicator" onclick="slidChanger(1)"></span>
-                    <span class="indicator" onclick="slidChanger(2)"></span>
-                    <span class="indicator" onclick="slidChanger(3)"></span>
-                    <span class="indicator" onclick="slidChanger(4)"></span>
-                    <span class="indicator" onclick="slidChanger(5)"></span>
-                </div>
+
                 <div class="img img2">
                 </div>
             </div>
@@ -126,13 +122,6 @@
                 <a href="" class="btn main_back">Stand out! Join us Now</a>
             </div>
             <div class="images col-md-5">
-                <div class="indicators">
-                    <span class="indicator" onclick="slidChanger(1)"></span>
-                    <span class="indicator" onclick="slidChanger(2)"></span>
-                    <span class="indicator" onclick="slidChanger(3)"></span>
-                    <span class="indicator" onclick="slidChanger(4)"></span>
-                    <span class="indicator" onclick="slidChanger(5)"></span>
-                </div>
                 <div class="img img1"></div>
             </div>
         </div>
@@ -148,13 +137,6 @@
                 <a href="" class="btn main_back">Stand out! Join us Now</a>
             </div>
             <div class="images col-md-5">
-                <div class="indicators">
-                    <span class="indicator" onclick="slidChanger(1)"></span>
-                    <span class="indicator" onclick="slidChanger(2)"></span>
-                    <span class="indicator" onclick="slidChanger(3)"></span>
-                    <span class="indicator" onclick="slidChanger(4)"></span>
-                    <span class="indicator" onclick="slidChanger(5)"></span>
-                </div>
                 <div class="img img1"></div>
             </div>
         </div>
@@ -170,42 +152,40 @@
                 <a href="" class="btn main_back">Stand out! Join us Now</a>
             </div>
             <div class="images col-md-5">
-                <div class="indicators">
-                    <span class="indicator" onclick="slidChanger(1)"></span>
-                    <span class="indicator" onclick="slidChanger(2)"></span>
-                    <span class="indicator" onclick="slidChanger(3)"></span>
-                    <span class="indicator" onclick="slidChanger(4)"></span>
-                    <span class="indicator" onclick="slidChanger(5)"></span>
-                </div>
                 <div class="img img1"></div>
             </div>
         </div>
         <div class="circle"></div>
-    </header>
+    </section>
 
     <!-- start first Section (Grid) -->
     <div class="container-fluid grid">
         <div class="row">
             <div class="col-md-5">
                 <div class="towPart">
-                    <h3>COLLABORATE <span>GROW</span></h3>
-                    <p>From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow your
-                        brand, futurize your services..</p>
-                    <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
-                </div>
-                <div class="towPart">
-                    <h3>ACHIEVE YOUR <span>GOALS</span></h3>
-                    <ul>
-                        <li>Drive sales</li>
-                        <li>Engage customers with an interactive social shopping experience</li>
-                        <li>Reduce returns through virtual try-on</li>
-                        <li>Grow your social media presence and have every aspect of your business under your thorough
-                            monitoring</li>
-                        <li>Extend your audience reach by choosing to join renowned malls or even choose to host your
-                            business in private celebrity and influencer virtual spaces</li>
-                    </ul>
-                    <p><span>Interested? Let’s Collaborate!</span></p>
-                    <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
+                    <div>
+                        <h3>COLLABORATE <span>GROW</span></h3>
+                        <p>From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow
+                            your
+                            brand, futurize your services..</p>
+                        <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
+                    </div>
+                    <div>
+                        <h3>ACHIEVE YOUR <span>GOALS</span></h3>
+                        <ul>
+                            <li>Drive sales</li>
+                            <li>Engage customers with an interactive social shopping experience</li>
+                            <li>Reduce returns through virtual try-on</li>
+                            <li>Grow your social media presence and have every aspect of your business under your
+                                thorough
+                                monitoring</li>
+                            <li>Extend your audience reach by choosing to join renowned malls or even choose to host
+                                your
+                                business in private celebrity and influencer virtual spaces</li>
+                        </ul>
+                        <p><span>Interested? Let’s Collaborate!</span></p>
+                        <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
+                    </div>
                 </div>
             </div>
             <div class="col-md-7">
@@ -406,6 +386,84 @@
             <a href=""><img src="./images/download/download2.png" alt=""></a>
             <a href=""><img src="./images/download/download3.png" alt=""></a>
             <a href=""><img src="./images/download/download4.png" alt=""></a>
+        </div>
+    </section>
+
+    <section class="container-fluid contact">
+        <div class="row">
+            <div class="col-md-8 container-fluid">
+                <div class="row">
+                    <h3>Contact Us</h3>
+                    <h2>Send A Message</h2>
+                    <p>We are social at our core! Contact us.</p>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Phone number">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mb-3">
+                        <textarea class="form-control" placeholder="Your Message Here" id="Message"
+                            style="height: 100px"></textarea>
+                    </div>
+                    <div class="btn main_back mb-3">Send Message</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="myCard">
+                    <h2>Get In Touch</h2>
+                    <p>We are here for you, Just contact us!</p>
+                    <div class="innerCard">
+                        <span class="material-icons">
+                            email
+                        </span>
+                        <div class="content">
+                            <h3>Email us :</h3>
+                            <p>
+                                <span>
+                                    info@chickchack.net
+                                </span>
+                                <span>
+                                    info@chickchack.net
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="innerCard">
+                        <span class="material-icons">
+                            phone
+                        </span>
+                        <div class="content">
+                            <h3>Phone us :</h3>
+                            <p>
+                                <span>
+                                    +971 4 576 2549
+                                </span>
+                                <span>
+                                    +971 4 576 2549
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="innerCard">
+                        <span class="material-icons">
+                            place
+                        </span>
+                        <div class="content">
+                            <h3>Visit us :</h3>
+                            <p>UAE, Bussiness Bay, The Citadel Tower #601</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

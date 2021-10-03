@@ -7,7 +7,7 @@
             justify-content: space-between;
             width: 100%;
             .nav-links {
-                width: 36.25vw !important;
+                min-width: 36.25vw !important;
                 margin-left: 4.3vw;
                 display: flex;
                 justify-content: space-between;
@@ -15,10 +15,14 @@
             }
 
             .nav-link {
+                margin-left: 15px;
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 25px;
                 color: #a3a3a3 !important;
+                &:hover {
+                    color: #75246f !important;
+                }
             }
 
             .nav-link.active {
@@ -31,7 +35,6 @@
 
             .nav-btn {
                 display: flex;
-                // width: fit-content;
                 .nav-link {
                     color: #ffffff !important;
                     font-size: 16px;
@@ -75,4 +78,16 @@
 
 .carousel-indicators button {
     background-color: #75246f !important;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: block !important;
+        .nav-link{
+            padding: 10px 0px;
+            text-align: center;
+            margin-left: 0 !important;
+        }
+        margin-bottom: 15px;
+    }
 }
