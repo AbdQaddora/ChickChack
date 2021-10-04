@@ -76,26 +76,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    #about {
-        .content {
-            &::before {
-                display: none;
-            }
 
-            &::after {
-                display: none;
-            }
-        }
-        &::before {
-            display: none;
-        }
-
-        &::after {
-            display: none;
-        }
-    }
-}
 @media screen and (min-width: 1100px) {
     .grid .col-md-5,
     .grid .col-md-6 {

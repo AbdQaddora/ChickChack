@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px) {
+    // nav
+    .nav-links {
+        display: block !important;
+        .nav-link {
+            padding: 10px 0px;
+            text-align: center;
+            margin-left: 0 !important;
+        }
+        margin-bottom: 15px;
+    }
+
+    // header Slider
+    .sliderSection {
+        margin-top: 15px;
+        .indicators {
+            width: 40vw;
+            margin-left: 50%;
+        }
+        .row {
+            margin-top: 5px;
+            .content {
+                text-align: center;
+                margin-bottom: 25px;
+                h2 {
+                    font-size: 40px;
+                }
+
+                p {
+                    font-size: 18px;
+                    padding: 0px 15px;
+                }
+
+                ul li {
+                    font-size: 18px;
+                    text-align: left;
+                }
+
+                .main_back {
+                    padding: 10px 20px !important;
+                    font-style: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    // grid of first section
+    .grid .col-md-5,
+    .grid .col-md-6 {
+        min-height: 400px !important;
+    }
+
+    // about
+    #about {
+        .content {
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}
