@@ -88,6 +88,9 @@
 
     // about
     #about {
+        h2 {
+            font-size: 35px;
+        }
         .content {
             text-align: center;
             background-size: 80vw 80vw;
@@ -115,6 +118,24 @@
         }
     }
 
+    .download {
+        margin: 100px 0;
+        h2 {
+            font-size: 35px;
+        }
+
+        div{
+            margin: 40px auto 100px !important;
+            justify-content: center;
+            a{
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .contact{
+        margin-top: 50px;
+    }
     footer {
         .col-lg-4 {
             padding: 20px !important;
