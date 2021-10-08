@@ -1,5 +1,4 @@
 .grid {
-    margin-top: 6.66vh;
     margin-bottom: 10.55vh;
     .col-md-7 {
         .container-fluid {
@@ -8,7 +7,7 @@
     }
     .col-md-5,
     .col-md-6 {
-        min-height: 800px;
+        height: 800px;
         margin-bottom: 15px;
         div {
             height: fit-content;
@@ -76,8 +75,45 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+.gridController {
+    user-select: none;
+    margin-top: 6vh;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .material-icons {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: rgba(39, 39, 46, 0.2);
+        color: white;
+    }
 
+    .material-icons:nth-child(2) {
+        background-color: #75246f;
+        margin-left: 15px;
+    }
+
+    div:last-child {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        color: #979797;
+        div {
+            margin: 0 7px;
+            width: 35px;
+            height: 1px;
+            display: inline-block;
+            background: #979797;
+        }
+        span:last-child {
+            color: rgba(151, 151, 151, 0.3);
+        }
+    }
 }
 @media screen and (min-width: 1100px) {
     .grid .col-md-5,

@@ -1,42 +1,56 @@
 @media screen and (max-width: 768px) {
-    .container-fluid {
-        padding-left: 3vw !important;
-        padding-right: 3vw !important;
+    .hiddenOnMobile {
+        display: none !important;
     }
+
     // nav
-    .nav-links {
-        display: block !important;
-        .nav-link {
-            padding: 10px 0px;
-            text-align: center;
-            margin-left: 0 !important;
+    .navbar {
+        .container-fluid {
+            padding: 25px 5vw 0 5vw;
+            justify-content: flex-start;
         }
-        margin-bottom: 15px;
+        .navbar-toggler {
+            margin-right: 20px;
+            width: 24px;
+            height: 100%;
+            .navbar-toggler-icon {
+                background-image: url(../images/toggler.svg);
+                background-size: 110%;
+            }
+            border: none;
+            &:focus {
+                @include shadow(0px 0px 0px 5px rgba(0, 0, 0, 0));
+            }
+        }
+
+        img {
+            height: 40px;
+        }
     }
 
     // header Slider
     .sliderSection {
         margin-top: 15px;
-        .indicators {
-            width: 40vw;
-            margin-left: 50%;
-        }
         .row {
-            margin-top: 5px;
             .content {
-                text-align: center;
-                margin-bottom: 25px;
+                margin-top: 20px;
+                order: 2;
                 h2 {
-                    font-size: 40px;
+                    font-size: 20px;
+                    margin-bottom: 7px;
                 }
 
                 p {
-                    font-size: 18px;
-                    padding: 0px 15px;
+                    font-size: 16px;
+                    margin-bottom: 25px;
+                }
+
+                p ~ ul {
+                    margin-bottom: 25px;
                 }
 
                 ul li {
-                    font-size: 18px;
+                    font-size: 16px !important;
                     text-align: left;
                 }
 
@@ -46,13 +60,59 @@
                     font-size: 18px;
                 }
             }
+
+            .images {
+                order: 1;
+                .img {
+                    order: 1;
+                    min-height: 250px;
+                }
+
+                .indicators {
+                    width: 50vw;
+                    order: 2;
+                    top: 10px;
+                }
+            }
         }
     }
 
     // grid of first section
-    .grid .col-md-5,
-    .grid .col-md-6 {
-        min-height: 400px !important;
+    .grid {
+        height: 560px;
+        width: 400vw;
+        .row {
+            display: inline-block;
+            .col-md-5:first-child {
+                display: inline-block;
+                .towPart {
+                    height: 560px * 2 + 15px !important;
+                    div {
+                        display: inline-block;
+                        width: 90vw !important;
+                        height: 560px;
+                        margin-bottom: 15px;
+                    }
+
+                    div:last-child {
+                        background-color: red;
+                    }
+                }
+            }
+
+            .col-md-7 {
+                display: inline-block;
+                .row {
+                    display: inline-block;
+                    .col-md-6 {
+                        display: inline-block;
+                        height: 560px !important;
+                        width: 90vw;
+                    }
+                }
+            }
+        }
+        // width: 400vw;
     }
 
     // technologies
@@ -124,16 +184,16 @@
             font-size: 35px;
         }
 
-        div{
+        div {
             margin: 40px auto 100px !important;
             justify-content: center;
-            a{
+            a {
                 margin-bottom: 15px;
             }
         }
     }
 
-    .contact{
+    .contact {
         margin-top: 50px;
     }
     footer {
@@ -160,5 +220,12 @@
             text-align: center;
             padding: 0;
         }
+    }
+}
+
+// not mobile
+@media screen and (min-width: 768px) {
+    .hiddenOnPC {
+        display: none !important;
     }
 }

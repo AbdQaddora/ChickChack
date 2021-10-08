@@ -1,0 +1,43 @@
+.mobileNav {
+    position: fixed;
+    top: 0;
+    left: -70vw;
+    z-index: 2000;
+    height: 100vh !important;
+    width: 70vw;
+    background: #75246f;
+    padding: 50px 15px 50px 5px;
+    transition: left 0.3s ease-in-out;
+    ul {
+        div:first-child {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                user-select: none;
+                color: white;
+                font-size: 40px;
+            }
+        }
+
+        .nav-links {
+            height: 50vh;
+            width: 100%;
+            margin-top: 50px;
+            display: block !important;
+            .nav-item {
+                .nav-link {
+                    padding: 15px 0px;
+                    text-align: left;
+                    color: rgba(255, 255, 255, 0.8) !important;
+                    &:hover{
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
