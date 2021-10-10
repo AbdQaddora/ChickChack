@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <!-- Google icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -225,20 +228,91 @@
     </section>
 
     <!-- start first Section (Grid) -->
-    <div class="container-fluid">
-        <div class="hiddenOnPC gridController">
-            <div>
-                <span class="material-icons" onclick="sliderMoverBack()">arrow_back</span>
-                <span class="material-icons" onclick="sliderMover()">arrow_forward</span>
-            </div>
-            <div>
-                <span class="gridCounter">01</span>
-                <div></div>
-                <span>04</span>
+    <div class="hiddenOnPC swiper mySwiper">
+        <div class="container-fluid">
+            <div class="hiddenOnPC gridController">
+                <div>
+                    <span class="material-icons prev">arrow_back</span>
+                    <span class="material-icons next">arrow_forward</span>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div>
+                    <span class="gridCounter">01</span>
+                    <div></div>
+                    <span>04</span>
+                </div>
             </div>
         </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div>
+                    <h3>COLLABORATE <span>GROW</span></h3>
+                    <p>From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow
+                        your brand, futurize your services, maximize your revenue and reach a broader audience.
+                        CheckChack provides business owners and service providers with the most advanced dashboard
+                        to have complete control over every aspect of their business.</p>
+                    <p><span>Interested? Let’s Collaborate!</span></p>
+                    <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <h3>ACHIEVE YOUR <span>GOALS</span></h3>
+                    <ul>
+                        <li>Drive sales</li>
+                        <li>Engage customers with an interactive social shopping experience</li>
+                        <li>Reduce returns through virtual try-on</li>
+                        <li>Grow your social media presence and have every aspect of your business under your
+                            thorough
+                            monitoring</li>
+                        <li>Extend your audience reach by choosing to join renowned malls or even choose to host
+                            your
+                            business in private celebrity and influencer virtual spaces</li>
+                    </ul>
+                    <p><span>Interested? Let’s Collaborate!</span></p>
+                    <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <h3>DEVELOP, ADVANCE</h3>
+                    <ul>
+                        <li>Design and build your shop or point of sale from scratch</li>
+                        <li>Choose your preferred location, like designated virtual malls, showrooms, expos
+                            and others
+                        </li>
+                        <li>Display your products and services in 3D</li>
+                        <li>Offer product try-on in AR</li>
+                        <li>Upload your inventory with a press of a button</li>
+                        <li>Arrange your shop to your preference, with help desks, banners or panels</li>
+                    </ul>
+                    <p><span>Interested? Let’s Collaborate!</span></p>
+                    <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div>
+                    <h3>REACH, <span>PROSPER</span></h3>
+                    <ul>
+                        <li>Benefit from the self-learning AI bot, taking care of your customer support
+                            needs and
+                            improving performance constantly</li>
+                        <li>Support for online services like travel, booking and subscriptions</li>
+                        <li>Add safe payment methods, and link your business to the shipping/delivery
+                            company of your
+                            choice</li>
+                        <li>Grow your brand with extensive marketing solutions: Virtual public spaces to
+                            place your
+                            banners, ad boards or panels.</li>
+                    </ul>
+                    <p><span>Interested? Let’s Collaborate!</span></p>
+                    <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <div class="container-fluid grid">
+    <div class="container-fluid grid hiddenOnMobile">
 
         <div class="row">
             <div class="col-md-5 col-6">
@@ -465,6 +539,7 @@
                 platform worthy of your time
                 and
                 presence.
+                <img src="./images/about/Subtract.png" />
             </p>
         </div>
     </section>
@@ -598,6 +673,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev",
+            },
+        });
+        swiper.on('slideChange', function () {
+            console.log('test')
+            document.querySelector(".gridCounter").innerHTML = `0${this.activeIndex + 1}`;
+        });
+    </script>
 
     <!-- My script -->
     <script src="./JS/main.js"></script>
