@@ -384,7 +384,7 @@ body {
 
 .grid .col-md-5,
 .grid .col-md-6 {
-  min-height: 800px;
+  height: 800px;
   margin-bottom: 15px;
 }
 
@@ -579,41 +579,6 @@ body {
 }
 
 .TecController .active {
-  background: #75246f;
-  color: #fff;
-}
-
-.TecController2.hiddenOnPC {
-  width: 1150vw;
-  margin-left: 5vw;
-  -webkit-transition: -webkit-transform 0.3s ease-in-out;
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-}
-
-.TecController2.hiddenOnPC .indicator {
-  display: block;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  text-align: center;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-  width: 180px;
-  margin-right: 20px;
-  font-size: 14px;
-  line-height: 53px;
-  letter-spacing: -0.165px;
-  color: #979797;
-  background: rgba(218, 218, 218, 0.28);
-  border-radius: 123px;
-}
-
-.TecController2.hiddenOnPC .active {
   background: #75246f;
   color: #fff;
 }
@@ -1235,6 +1200,10 @@ footer .col-lg-4:nth-child(1) img {
   }
 }
 
+.technologies {
+  margin-top: 30px;
+}
+
 .technologies .row .content {
   margin-bottom: 25px;
 }
@@ -1260,64 +1229,104 @@ footer .col-lg-4:nth-child(1) img {
   padding: 7px 27px;
 }
 
-.technologies #about h2 {
+.TecController2.hiddenOnPC {
+  width: 1150px;
+  margin-left: 5vw;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.TecController2.hiddenOnPC .indicator {
+  display: block;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  width: 180px !important;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 53px;
+  letter-spacing: -0.165px;
+  color: #979797;
+  background: rgba(218, 218, 218, 0.28);
+  border-radius: 123px;
+}
+
+.TecController2.hiddenOnPC .active {
+  background: #75246f;
+  color: #fff;
+}
+
+#about h2 {
   font-size: 35px;
 }
 
-.technologies #about .content {
-  text-align: center;
+#about .content {
   background-size: 80vw 80vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  width: 100%;
-}
-
-.technologies #about .content::before {
-  display: none;
-}
-
-.technologies #about .content::after {
-  display: none;
-}
-
-.technologies #about .content p {
-  font-size: 19px;
   width: 80%;
 }
 
-.technologies #about::before {
+#about .content::before {
   display: none;
 }
 
-.technologies #about::after {
+#about .content::after {
   display: none;
 }
 
-.technologies .download {
+#about .content p {
+  font-size: 14px;
+  line-height: 190%;
+}
+
+#about::before {
+  display: none;
+}
+
+#about::after {
+  display: none;
+}
+
+#about img {
+  width: 45px;
+  height: 45px;
+  top: 35px !important;
+}
+
+.download {
   margin: 100px 0;
 }
 
-.technologies .download h2 {
+.download h2 {
   font-size: 35px;
 }
 
-.technologies .download div {
+.download div {
   margin: 40px auto 100px !important;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.technologies .download div a {
+.download div a {
   margin-bottom: 15px;
 }
 
-.technologies .contact {
+.contact {
   margin-top: 50px;
 }
 
-.technologies footer .col-lg-4 {
+footer .col-lg-4 {
   padding: 20px !important;
 }
 

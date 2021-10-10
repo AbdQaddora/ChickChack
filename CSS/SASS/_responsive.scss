@@ -83,7 +83,6 @@
         // transform: translateX(-180vw);
         transition: transform 0.3s ease-in-out;
         .row {
-            
             .col-md-5:first-child {
                 height: 600px !important;
                 .towPart {
@@ -132,6 +131,7 @@
 
 // technologies
 .technologies {
+    margin-top: 30px;
     .row {
         .content {
             margin-bottom: 25px;
@@ -159,30 +159,44 @@
             }
         }
     }
+}
 
-    // about
-    #about {
-        h2 {
-            font-size: 35px;
-        }
-        .content {
-            text-align: center;
-            background-size: 80vw 80vw;
-            height: fit-content;
-            width: 100%;
-            &::before {
-                display: none;
-            }
+.TecController2.hiddenOnPC {
+    width: 1150px;
+    margin-left: 5vw;
+    transition: transform 0.3s ease-in-out;
+    .indicator {
+        display: block;
+        display: inline-block;
+        cursor: pointer;
+        @include userSelect(none);
+        text-align: center;
+        transition: background-color 0.3s ease-in-out;
+        width: 180px !important;
+        margin-right: 10px;
+        font-size: 14px;
+        line-height: 53px;
+        letter-spacing: -0.165px;
+        color: #979797;
+        background: rgba(218, 218, 218, 0.28);
+        border-radius: 123px;
+    }
 
-            &::after {
-                display: none;
-            }
+    .active {
+        background: #75246f;
+        color: #fff;
+    }
+}
 
-            p {
-                font-size: 19px;
-                width: 80%;
-            }
-        }
+// about
+#about {
+    h2 {
+        font-size: 35px;
+    }
+    .content {
+        background-size: 80vw 80vw;
+        height: fit-content;
+        width: 80%;
         &::before {
             display: none;
         }
@@ -190,30 +204,50 @@
         &::after {
             display: none;
         }
-    }
 
-    .download {
-        margin: 100px 0;
-        h2 {
-            font-size: 35px;
-        }
-
-        div {
-            margin: 40px auto 100px !important;
-            justify-content: center;
-            a {
-                margin-bottom: 15px;
-            }
+        p {
+            font-size: 14px;
+            line-height: 190%;
         }
     }
 
-    .contact {
-        margin-top: 50px;
+    &::before {
+        display: none;
     }
-    footer {
-        .col-lg-4 {
-            padding: 20px !important;
+
+    &::after {
+        display: none;
+    }
+
+    img {
+        width: 45px;
+        height: 45px;
+        top: 35px !important;
+    }
+}
+
+.download {
+    margin: 100px 0;
+    h2 {
+        font-size: 35px;
+    }
+
+    div {
+        margin: 40px auto 100px !important;
+        justify-content: center;
+        a {
+            margin-bottom: 15px;
         }
+    }
+}
+
+.contact {
+    margin-top: 50px;
+}
+
+footer {
+    .col-lg-4 {
+        padding: 20px !important;
     }
 }
 

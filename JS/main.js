@@ -41,8 +41,11 @@ function TecSlidChangerMobile(x) {
     document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.remove("active");
     document.querySelector(` .TecController2 .indicator:nth-child(${currentTecSlid})`).classList.remove("active");
     currentTecSlid = x;
-
-    document.querySelector(` .TecController2`).style = `transform: translateX(-${170 * (currentTecSlid - 1)}px);`;
+    if (currentTecSlid < 5) {
+        document.querySelector(` .TecController2`).style = `transform: translateX(-${180 * (currentTecSlid - 1)}px);`;
+    }else{
+        document.querySelector(` .TecController2`).style = `transform: translateX(-${180 * (currentTecSlid - 2) + 35}px);`;
+    }
 
 
     document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.add("active");
