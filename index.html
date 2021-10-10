@@ -228,8 +228,8 @@
     <div class="container-fluid">
         <div class="hiddenOnPC gridController">
             <div>
-                <span class="material-icons">arrow_back</span>
-                <span class="material-icons">arrow_forward</span>
+                <span class="material-icons" onclick="sliderMoverBack()">arrow_back</span>
+                <span class="material-icons" onclick="sliderMover()">arrow_forward</span>
             </div>
             <div>
                 <span class="gridCounter">01</span>
@@ -239,11 +239,11 @@
         </div>
     </div>
     <div class="container-fluid grid">
-       
+
         <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 col-6">
                 <div class="towPart">
-                    <div>
+                    <div class="col-6 col-md-12">
                         <h3>COLLABORATE <span>GROW</span></h3>
                         <p>From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow
                             your brand, futurize your services, maximize your revenue and reach a broader audience.
@@ -252,7 +252,7 @@
                         <p><span>Interested? Let’s Collaborate!</span></p>
                         <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
                     </div>
-                    <div>
+                    <div class="col-6 col-md-12">
                         <h3>ACHIEVE YOUR <span>GOALS</span></h3>
                         <ul>
                             <li>Drive sales</li>
@@ -270,10 +270,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-7 col-6">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-6">
                             <div>
                                 <h3>DEVELOP, ADVANCE</h3>
                                 <ul>
@@ -290,7 +290,7 @@
                                 <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-6">
                             <div>
                                 <h3>REACH, <span>PROSPER</span></h3>
                                 <ul>
@@ -316,7 +316,7 @@
     </div>
 
     <!-- start secound section Technologies -->
-    <div class="container-fluid">
+    <div class="container-fluid hiddenOnMobile">
         <div class="TecController">
             <span class="indicator" onclick="TecSlidChanger(1)">Augmented Reality</span>
             <span class="indicator" onclick="TecSlidChanger(2)">AI & Machine Learning</span>
@@ -325,6 +325,15 @@
             <span class="indicator" onclick="TecSlidChanger(5)">3D scaninng & modeling</span>
         </div>
     </div>
+
+    <div class="TecController2 hiddenOnPC">
+        <div class="indicator" onclick="TecSlidChangerMobile(1)">Augmented Reality</div>
+        <div class="indicator" onclick="TecSlidChangerMobile(2)">AI & Machine Learning</div>
+        <div class="indicator" onclick="TecSlidChangerMobile(3)">Dashboard</div>
+        <div class="indicator" onclick="TecSlidChangerMobile(4)">Virtual Services</div>
+        <div class="indicator" onclick="TecSlidChangerMobile(5)">3D scaninng & modeling</div>
+    </div>
+
     <div class="container-fluid technologies" id="Technologies">
 
         <!-- slid 1 -->

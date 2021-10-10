@@ -25,6 +25,7 @@ function slidChanger(x) {
 let currentTecSlid = 1;
 document.querySelector(`.technologies .row:nth-of-type(${currentTecSlid})`).classList.add("active");
 document.querySelector(` .TecController .indicator:nth-of-type(${currentTecSlid})`).classList.add("active");
+document.querySelector(` .TecController2 .indicator:nth-of-type(${currentTecSlid})`).classList.add("active");
 
 function TecSlidChanger(x) {
     document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.remove("active");
@@ -36,10 +37,42 @@ function TecSlidChanger(x) {
     document.querySelector(` .TecController .indicator:nth-child(${currentTecSlid})`).classList.add("active");
 }
 
+function TecSlidChangerMobile(x) {
+    document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.remove("active");
+    document.querySelector(` .TecController2 .indicator:nth-child(${currentTecSlid})`).classList.remove("active");
+    currentTecSlid = x;
+
+    document.querySelector(` .TecController2`).style = `transform: translateX(-${170 * (currentTecSlid - 1)}px);`;
+
+
+    document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.add("active");
+    document.querySelector(` .TecController2 .indicator:nth-child(${currentTecSlid})`).classList.add("active");
+}
+
 function mobileNavShow() {
     document.querySelector(".mobileNav").style = "left: 0vw;";
 }
 
 function mobileNavhide() {
     document.querySelector(".mobileNav").style = "left: -70vw;";
+}
+
+let gridSliderPosition = 0;
+let currentGridSlid = 1;
+function sliderMover() {
+    if (gridSliderPosition < 200) {
+        gridSliderPosition += 92;
+        currentGridSlid += 1;
+    }
+    document.querySelector(".grid").style = `transform: translateX(-${gridSliderPosition}vw);`
+    document.querySelector(".gridCounter").innerHTML = `0${currentGridSlid}`
+}
+
+function sliderMoverBack() {
+    if (gridSliderPosition > 90) {
+        gridSliderPosition -= 92;
+        currentGridSlid -= 1;
+    }
+    document.querySelector(".grid").style = `transform: translateX(-${gridSliderPosition}vw);`
+    document.querySelector(".gridCounter").innerHTML = `0${currentGridSlid}`
 }

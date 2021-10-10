@@ -7,7 +7,7 @@
     }
     .col-md-5,
     .col-md-6 {
-        height: 800px;
+        min-height: 800px;
         margin-bottom: 15px;
         div {
             height: fit-content;
@@ -61,16 +61,15 @@
             flex-direction: column;
             background-color: #fff;
             padding: 0;
-            align-items: stretch;
-        }
-        .towPart div {
-            height: fit-content;
-            margin-bottom: 30px;
-        }
-
-        .towPart div:last-child {
-            height: 100%;
-            margin-bottom: 0px;
+            .col-md-12 {
+                height: fit-content;
+                margin-bottom: 30px;
+                height: calc(45% - 15px);
+                &:last-child {
+                    height:calc( 55% - 15px);
+                    margin-bottom: 0px;
+                }
+            }
         }
     }
 }
