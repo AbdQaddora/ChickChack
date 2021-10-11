@@ -1219,15 +1219,19 @@ footer .col-lg-4:nth-child(1) img {
     border-radius: 12px;
     padding: 7px 27px;
   }
-  .TecController2.hiddenOnPC {
+  .overFlow {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .overFlow .TecController2.hiddenOnPC {
     width: 1150px;
-    margin-left: 5vw;
+    padding-left: 5vw;
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
-  .TecController2.hiddenOnPC .indicator {
+  .overFlow .TecController2.hiddenOnPC .indicator {
     display: block;
     display: inline-block;
     cursor: pointer;
@@ -1247,7 +1251,7 @@ footer .col-lg-4:nth-child(1) img {
     background: rgba(218, 218, 218, 0.28);
     border-radius: 123px;
   }
-  .TecController2.hiddenOnPC .active {
+  .overFlow .TecController2.hiddenOnPC .active {
     background: #75246f;
     color: #fff;
   }
