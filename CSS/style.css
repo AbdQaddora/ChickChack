@@ -4,14 +4,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-body {
-  -webkit-overflow-x: hidden;
-  -moz-overflow-x: hidden;
-  -o-overflow-x: hidden;
-  -ms-overflow-x: hidden;
-  overflow-x: hidden !important;
-}
-
 .topOval {
   position: absolute;
   left: -14.72%;
@@ -728,18 +720,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url(../images/about/Subtract.png);
+  background-size: 48.88vw 48.88vw;
 }
 
 #about .content p {
   color: #1b1464;
-  width: 48.88vw !important;
   font-size: 24px;
   line-height: 190%;
   width: 577px;
-}
-
-#about .content p img {
-  height: 48.88vw;
 }
 
 #about .content::before {
@@ -814,8 +803,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .download div::after {
@@ -1078,7 +1065,7 @@ footer .col-lg-4:nth-child(1) img {
   color: white !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .hiddenOnMobile {
     display: none !important;
   }
@@ -1209,6 +1196,7 @@ footer .col-lg-4:nth-child(1) img {
     color: #808080;
   }
   .technologies {
+    overflow: hidden !important;
     margin-top: 30px;
   }
   .technologies .row .content {
@@ -1265,14 +1253,22 @@ footer .col-lg-4:nth-child(1) img {
   }
   #about h2 {
     font-size: 35px;
+    margin-bottom: 2vh;
+  }
+  #about .cursor {
+    position: absolute;
+    top: 40px;
+    left: 60%;
+    height: 50px;
+    width: 50px;
   }
   #about .content {
-    text-align: center;
-    background-size: 80vw 80vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: 100%;
+    width: 100vw;
+    height: 100vw;
+    background-image: url(../../images/about/Subtract_mobile.png);
+    background-size: 95vw 95vw;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   #about .content::before {
     display: none;
@@ -1281,8 +1277,12 @@ footer .col-lg-4:nth-child(1) img {
     display: none;
   }
   #about .content p {
-    font-size: 19px;
+    margin-top: 15px;
+    font-size: 16px;
     width: 80%;
+    margin-left: 25px;
+    text-align: left;
+    line-height: 1.5em;
   }
   #about::before {
     display: none;
@@ -1301,6 +1301,11 @@ footer .col-lg-4:nth-child(1) img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .download div::after {
+    content: "";
   }
   .download div a {
     margin-bottom: 15px;
@@ -1308,12 +1313,6 @@ footer .col-lg-4:nth-child(1) img {
   .contact {
     margin-top: 50px;
   }
-  footer .col-lg-4 {
-    padding: 20px !important;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
   footer .col-lg-4 {
     padding: 25px !important;
   }

@@ -59,3 +59,14 @@ function mobileNavShow() {
 function mobileNavhide() {
     document.querySelector(".mobileNav").style = "left: -70vw;";
 }
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+        nextEl: ".next",
+        prevEl: ".prev",
+    },
+});
+swiper.on('slideChange', function () {
+    console.log('test')
+    document.querySelector(".gridCounter").innerHTML = `0${this.activeIndex + 1}`;
+});
