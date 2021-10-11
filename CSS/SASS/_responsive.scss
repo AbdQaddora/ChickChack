@@ -210,11 +210,10 @@
         .content {
             width: 100vw;
             height: 100vw;
-            background-image: url(../../images/about/Subtract_mobile.png);
+            background-image: url(../images/about/Subtract_mobile.png);
             background-size: 95vw 95vw;
             background-repeat: no-repeat;
             background-position: center;
-
             &::before {
                 display: none;
             }
@@ -262,6 +261,7 @@
 
     .contact {
         margin-top: 50px;
+        padding-bottom: 0px;
     }
 
     footer {

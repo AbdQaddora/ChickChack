@@ -1269,7 +1269,7 @@ footer .col-lg-4:nth-child(1) img {
   #about .content {
     width: 100vw;
     height: 100vw;
-    background-image: url(../../images/about/Subtract_mobile.png);
+    background-image: url(../images/about/Subtract_mobile.png);
     background-size: 95vw 95vw;
     background-repeat: no-repeat;
     background-position: center;
@@ -1316,6 +1316,7 @@ footer .col-lg-4:nth-child(1) img {
   }
   .contact {
     margin-top: 50px;
+    padding-bottom: 0px;
   }
   footer .col-lg-4 {
     padding: 25px !important;
