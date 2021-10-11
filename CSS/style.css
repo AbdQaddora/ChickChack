@@ -1302,17 +1302,23 @@ footer .col-lg-4:nth-child(1) img {
   }
   .download div {
     margin: 40px auto 100px !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 80%;
+  }
+  .download div a {
+    width: 48%;
+    margin-bottom: 5px;
+  }
+  .download div a img {
+    width: 100%;
+    min-height: 55px;
   }
   .download div::after {
     content: "";
-  }
-  .download div a {
-    margin-bottom: 15px;
   }
   .contact {
     margin-top: 50px;

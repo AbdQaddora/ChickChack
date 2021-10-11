@@ -248,13 +248,20 @@
 
         div {
             margin: 40px auto 100px !important;
-            justify-content: center;
-            flex-wrap: nowrap;
-            &::after {
-                content: "";
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 80%;
+            a{
+                width: 48%;
+                margin-bottom: 5px;
+                img{
+                    width: 100%;
+                    min-height: 55px;
+                }
             }
-            a {
-                margin-bottom: 15px;
+
+            &::after{
+                content: "";
             }
         }
     }
