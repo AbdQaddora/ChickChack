@@ -1,27 +1,3 @@
-let currentSlid = 1;
-document.querySelector(`.sliderSection .row:nth-of-type(${currentSlid})`).classList.add("active");
-document.querySelector(`.sliderSection .row .images .indicators .indicator:nth-of-type(${currentSlid})`).classList.add("active");
-
-function slidChanger(x) {
-    document.querySelector(`.sliderSection .row:nth-of-type(${currentSlid})`).classList.remove("active");
-    document.querySelector(`.sliderSection .row:nth-of-type(${currentSlid}) .images .indicators .indicator:nth-of-type(${currentSlid})`).classList.remove("active");
-    console.log(currentSlid);
-    currentSlid = x;
-    console.log(currentSlid);
-    if (currentSlid > 2) {
-        document.querySelector(`.topOval`).style = "display:block;";
-        document.querySelector(`.circle`).style = "display:none;";
-    } else {
-        document.querySelector(`.topOval`).style = "display:none;";
-        document.querySelector(`.circle`).style = "display:block;";
-    }
-
-    document.querySelector(`.sliderSection .row:nth-of-type(${currentSlid})`).classList.add("active");
-    document.querySelector(`.sliderSection .row:nth-of-type(${currentSlid}) .images .indicators .indicator:nth-of-type(${currentSlid})`).classList.add("active");
-}
-
-
-
 let currentTecSlid = 1;
 document.querySelector(`.technologies .row:nth-of-type(${currentTecSlid})`).classList.add("active");
 document.querySelector(` .TecController .indicator:nth-of-type(${currentTecSlid})`).classList.add("active");
@@ -66,7 +42,35 @@ var swiper = new Swiper(".mySwiper", {
         prevEl: ".prev",
     },
 });
+
 swiper.on('slideChange', function () {
-    console.log('test')
     document.querySelector(".gridCounter").innerHTML = `0${this.activeIndex + 1}`;
+});
+
+var swiper2 = new Swiper(".mySwiper2", {
+    effect: 'fade',
+    speed: 300,
+    fadeEffect: {
+        crossFade: true
+    },
+    pagination: {
+        el: ".indecators",
+        clickable: true,
+        renderBullet: function (index, indicator) {
+            return '<span class="' + indicator + '">' + "</span>";
+        },
+    },
+    breakpoints: {
+        992: {
+            allowTouchMove: false
+        }
+    }
+});
+
+swiper2.on('slideChange', function () {
+    if (swiper2.activeIndex == 2) {
+        document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').classList.add('fit');
+    } else {
+        document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').classList.remove('fit');
+    }
 });

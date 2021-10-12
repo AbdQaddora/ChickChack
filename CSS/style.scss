@@ -5,6 +5,7 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    scroll-padding-top: 25px;
 }
 
 .topOval {
@@ -55,6 +56,17 @@
 }
 ::-webkit-scrollbar-corner {
     background: transparent;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #fff;
+    background: #75246f;
+}
+
+::selection {
+    color: #fff;
+    background: #75246f;
 }
 
 /* Start nav bar Style */
