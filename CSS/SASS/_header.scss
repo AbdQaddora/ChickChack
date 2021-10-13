@@ -105,6 +105,7 @@
                 .img2 {
                     background-image: url(../images/header/img2.png);
                     position: relative;
+                    overflow: visible !important;
                     &::before {
                         content: "";
                         height: 1px;
@@ -113,9 +114,9 @@
                         top: 50%;
                         left: 50%;
                         z-index: -1;
-                        @include shadow(0px 50px 200px 50px #706f6fb8);
+                        @include shadow(0px 100px 200px 50px #706f6fb8);
+                    }
                 }
-
                 .img3 {
                     background-image: url(../images/header/img3.png);
                 }
@@ -129,16 +130,16 @@
                 }
             }
         }
-    }
-    .circle {
-        position: absolute;
-        width: 18.5vw;
-        height: 18.5vw;
-        left: -57px * 2;
-        top: 5.5vh;
-        border-radius: 50%;
-        z-index: -1;
-        background-color: #ac5ea40d;
+        .circle {
+            position: absolute;
+            width: 18.5vw;
+            height: 18.5vw;
+            left: -57px * 2;
+            top: 5.5vh;
+            border-radius: 50%;
+            z-index: -1;
+            background-color: #ac5ea40d;
+        }
     }
 }
 
