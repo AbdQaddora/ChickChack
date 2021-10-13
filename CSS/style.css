@@ -327,6 +327,21 @@
 
 .sliderSection .mySwiper2 .row .images .img2 {
   background-image: url(../images/header/img2.png);
+  position: relative;
+}
+
+.sliderSection .mySwiper2 .row .images .img2::before {
+  content: "";
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  -webkit-box-shadow: 0px 100px 200px 64px #706f6f;
+  -ms-box-shadow: 0px 100px 200px 64px #706f6f;
+  -o-box-shadow: 0px 100px 200px 64px #706f6f;
+  box-shadow: 0px 100px 200px 64px #706f6f;
 }
 
 .sliderSection .mySwiper2 .row .images .img3 {
