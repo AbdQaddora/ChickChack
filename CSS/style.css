@@ -14,6 +14,12 @@
   display: none;
 }
 
+iframe {
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+}
+
 .main_back {
   background-color: #75246f !important;
   color: #fff !important;
@@ -665,20 +671,12 @@
   border-radius: 12px;
 }
 
-.technologies .row .img1 {
-  background-image: url(../images/technologies/tec1.png);
-}
-
 .technologies .row .img2 {
   background-image: url(../images/technologies/tec2.png);
 }
 
 .technologies .row .img3 {
   background-image: url(../images/technologies/tec3.png);
-}
-
-.technologies .row .img4 {
-  background-image: url(../images/technologies/tec4.png);
 }
 
 .technologies .row .img5 {
