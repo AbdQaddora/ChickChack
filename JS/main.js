@@ -37,14 +37,18 @@ function mobileNavhide() {
 }
 
 var swiper = new Swiper(".mySwiper", {
-    navigation: {
-        nextEl: ".next",
-        prevEl: ".prev",
+    autoplay: {
+        delay: 15000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
     },
 });
 
+document.querySelector(`.gridIndecator span:nth-child(${swiper.activeIndex + 1})`).classList.add("active");
+
 swiper.on('slideChange', function () {
-    document.querySelector(".gridCounter").innerHTML = `0${this.activeIndex + 1}`;
+    document.querySelector(`.gridIndecator span:nth-child(${swiper.previousIndex + 1})`).classList.remove("active");
+    document.querySelector(`.gridIndecator span:nth-child(${swiper.activeIndex + 1})`).classList.add("active");
 });
 
 var swiper2 = new Swiper(".mySwiper2", {

@@ -90,6 +90,15 @@
         .img5 {
             background-image: url(../images/technologies/tec5.png);
         }
+
+        video {
+            border-radius: 8px;
+            // position: relative;
+            // top: 50%;
+            height: 100%;
+            //    transform: translateY(-50%);
+            background-color: black;
+        }
     }
     .row.active {
         display: flex;

@@ -224,20 +224,6 @@
 
     <!-- start first Section (Grid) -->
     <div class="hiddenOnPC swiper mySwiper grid">
-        <div class="container-fluid">
-            <div class="hiddenOnPC gridController">
-                <div>
-                    <span class="material-icons prev">arrow_back</span>
-                    <span class="material-icons next">arrow_forward</span>
-                    <div class="swiper-pagination"></div>
-                </div>
-                <div>
-                    <span class="gridCounter">01</span>
-                    <div></div>
-                    <span>04</span>
-                </div>
-            </div>
-        </div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div>
@@ -305,14 +291,21 @@
                 </div>
             </div>
         </div>
-
+        <div class="container-fluid">
+            <div class="hiddenOnPC gridIndecator">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </div>
     <div class="container-fluid grid hiddenOnMobile">
 
         <div class="row">
             <div class="col-md-5 col-6">
                 <div class="towPart">
-                    <div class="col-6 col-md-12 wow animate__animated animate__fadeInTopLeft" data-wow-delay="0.25s">
+                    <div class="col-6 col-md-12 wow animate__animated animate__fadeInTopLeft" data-wow-delay="0.1s">
                         <h3>COLLABORATE <span>GROW</span></h3>
                         <p>From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow
                             your brand, futurize your services, maximize your revenue and reach a broader audience.
@@ -321,7 +314,7 @@
                         <p><span>Interested? Let’s Collaborate!</span></p>
                         <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
                     </div>
-                    <div class="col-6 col-md-12 wow animate__animated animate__fadeInBottomLeft" data-wow-delay="0.7s">
+                    <div class="col-6 col-md-12 wow animate__animated animate__fadeInBottomLeft" data-wow-delay="0.5s">
                         <h3>ACHIEVE YOUR <span>GOALS</span></h3>
                         <ul>
                             <li>Drive sales</li>
@@ -342,7 +335,7 @@
             <div class="col-md-7 col-6">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-md-6 col-6 wow animate__animated animate__fadeInDown" data-wow-delay="0.5s">
+                        <div class="col-md-6 col-6 wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
                             <div>
                                 <h3>DEVELOP, ADVANCE</h3>
                                 <ul>
@@ -359,7 +352,7 @@
                                 <a class="main_back">Read More<span class="material-icons">arrow_right_alt</span></a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                        <div class="col-md-6 col-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
                             <div>
                                 <h3>REACH, <span>PROSPER</span></h3>
                                 <ul>
@@ -388,15 +381,15 @@
     <div id="Technologies"></div>
     <div class="container-fluid hiddenOnMobile">
         <div class="TecController">
-            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.2s"
+            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.15s"
                 onclick="TecSlidChanger(1)">Augmented Reality</span>
-            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.4s"
+            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.3s"
                 onclick="TecSlidChanger(2)">AI & Machine Learning</span>
-            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.6s"
+            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.45s"
                 onclick="TecSlidChanger(3)">Dashboard</span>
-            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.8s"
+            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.6s"
                 onclick="TecSlidChanger(4)">Virtual Services</span>
-            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="1s"
+            <span class="indicator wow animate__animated animate__fadeInDown" data-wow-delay="0.75s"
                 onclick="TecSlidChanger(5)">3D scaninng & modeling</span>
         </div>
     </div>
@@ -415,7 +408,7 @@
 
         <!-- slid 1 -->
         <div class="row">
-            <div class="content col-md-6 wow animate__animated animate__bounceInLeft" data-wow-delay="0.3s">
+            <div class="content col-md-6 wow animate__animated animate__bounceInLeft" data-wow-delay="0.1s">
                 <h2>AUGMENTED REALITY & PRODUCT <span>TRY-ON</span>
                 </h2>
                 <div>
@@ -428,12 +421,11 @@
                 </div>
                 <a href="" class="btn main_back">Read More</a>
             </div>
-            <div class="images col-md-6 wow animate__animated animate__bounceInRight" data-wow-delay="0.3s">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item"
-                        src="https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4"
-                        allowfullscreen></iframe>
-                </div>
+            <div class="images col-md-6 wow animate__animated animate__bounceInRight video" data-wow-delay="0.1s">
+                <video controls autoplay width="100%">
+                    <source src="https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4"
+                        type="video/mp4" />
+                </video>
             </div>
         </div>
 
@@ -502,11 +494,10 @@
                 <a href="" class="btn main_back">Read More</a>
             </div>
             <div class="images col-md-6">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item"
-                        src="https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4"
-                        allowfullscreen></iframe>
-                </div>
+                <video controls autoplay width="100%">
+                    <source src="https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4"
+                        type="video/mp4" />
+                </video>
             </div>
         </div>
 
@@ -555,13 +546,13 @@
     <!-- Download section -->
     <section class="download">
         <h2 class="wow animate__animated animate__headShake">Download Now!</h2>
-        <div><a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.25s"><img
+        <div><a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.15s"><img
                     src="./images/download/download2.png" alt=""></a>
-            <a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.5s"><img
+            <a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.3s"><img
                     src="./images/download/download3.png" alt=""></a>
-            <a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.75s"><img
+            <a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.45s"><img
                     src="./images/download/download1.png" alt=""></a>
-            <a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="1s"><img
+            <a href="" class="wow animate__animated animate__fadeInDown" data-wow-delay="0.6s"><img
                     src="./images/download/download4.png" alt=""></a>
         </div>
     </section>
