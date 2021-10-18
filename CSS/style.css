@@ -793,12 +793,10 @@ iframe {
 .download div {
   margin: 11.11vh auto 41.11vh;
   width: 80%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
 }
 
 .download div::after {
@@ -1306,23 +1304,23 @@ footer .col-lg-4:nth-child(1) img {
   }
   .download div {
     margin: 40px auto 100px !important;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 80%;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-gap: 10px;
   }
   .download div a {
-    width: 48%;
-    text-align: center;
-    margin-bottom: 5px;
+    text-align: right;
   }
   .download div a img {
     width: 100%;
     max-width: 220px;
     height: 100%;
     max-height: 80px;
+  }
+  .download div a:nth-child(2), .download div a:nth-child(4) {
+    text-align: left;
   }
   .download div::after {
     content: "";
