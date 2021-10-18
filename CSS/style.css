@@ -1375,4 +1375,13 @@ footer .col-lg-4:nth-child(3) {
     right: -150px;
   }
 }
+
+@media screen and (min-width: 1700px) {
+  #about .content::before {
+    content: "";
+  }
+  #about .content::after {
+    content: "";
+  }
+}
 /*# sourceMappingURL=style.css.map */

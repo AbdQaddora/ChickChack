@@ -349,3 +349,18 @@
         }
     }
 }
+
+// for left and right hand
+@media screen and (min-width: 1700px) {
+    #about {
+        .content {
+            &::before {
+                content: "";
+            }
+
+            &::after {
+                content: "";
+            }
+        }
+    }
+}
