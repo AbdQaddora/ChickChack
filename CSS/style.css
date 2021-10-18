@@ -1136,7 +1136,6 @@ footer .col-lg-4:nth-child(3) {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    height: 70vw !important;
   }
   .sliderSection .swiper-wrapper .swiper-slide .row .images .indecators {
     -webkit-box-ordinal-group: 3;
@@ -1325,7 +1324,8 @@ footer .col-lg-4:nth-child(3) {
     height: 100%;
     max-height: 80px;
   }
-  .download div a:nth-child(2), .download div a:nth-child(4) {
+  .download div a:nth-child(2),
+  .download div a:nth-child(4) {
     text-align: left;
   }
   .download div::after {
