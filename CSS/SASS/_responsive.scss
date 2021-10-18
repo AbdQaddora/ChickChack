@@ -261,14 +261,16 @@
 
         div {
             margin: 40px auto 100px !important;
-            justify-content: space-between;
+            justify-content: space-evenly;
             flex-wrap: wrap;
             width: 80%;
             a {
                 width: 48%;
+                text-align: center;
                 margin-bottom: 5px;
                 img {
                     width: 100%;
+                    max-width:220px;
                     height: 100%;
                     max-height: 80px;
                 }

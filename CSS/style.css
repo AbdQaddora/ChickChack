@@ -1306,19 +1306,21 @@ footer .col-lg-4:nth-child(1) img {
   }
   .download div {
     margin: 40px auto 100px !important;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 80%;
   }
   .download div a {
     width: 48%;
+    text-align: center;
     margin-bottom: 5px;
   }
   .download div a img {
     width: 100%;
+    max-width: 220px;
     height: 100%;
     max-height: 80px;
   }
