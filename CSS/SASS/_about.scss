@@ -23,13 +23,13 @@
     }
 
     .content {
-        width: 48.88vw;
-        height: 48.88vw;
+        width: 704px;
+        height: 704px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: url(../images/about/Subtract.png);
-        background-size: 48.88vw 48.88vw;
+        background-size: 704px 704px;
         p {
             color: #1b1464;
             font-size: 24px;
@@ -57,10 +57,11 @@
         position: absolute;
         width: 68.27px;
         height: 68.27px;
-        left: 269.58px;
+        left: 18%;
         top: 72%;
         background: #f4f0f3;
         border-radius: 50%;
+        z-index: -1;
     }
 
     &::after {
@@ -68,17 +69,11 @@
         position: absolute;
         width: 28.75px;
         height: 28.75px;
-        left: 1191px;
+        left: 78%;
         top: 48%;
         background: #f4f0f3;
         opacity: 0.5;
         border-radius: 50%;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    .grid .col-md-5,
-    .grid .col-md-6 {
-        min-height: 650px !important;
+        z-index: -1;
     }
 }
