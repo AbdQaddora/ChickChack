@@ -71,3 +71,12 @@ var swiper2 = new Swiper(".mySwiper2", {
         }
     }
 });
+
+document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "display:none;";
+swiper2.on('slideChange', function () {
+    if (swiper2.activeIndex == 2) {
+        document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "display:block;";
+    } else {
+        document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "display:none;";
+    }
+});
