@@ -1005,6 +1005,10 @@ footer .col-lg-4:nth-child(1) img {
   width: 36px;
 }
 
+footer .col-lg-4:nth-child(3) {
+  padding: 0;
+}
+
 .mobileNav {
   position: fixed;
   top: 0;

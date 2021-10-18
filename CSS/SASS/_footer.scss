@@ -4,9 +4,6 @@ footer {
         margin-bottom: 15px;
         padding-left: 75px;
         padding-right: 75px;
-    }
-
-    .col-lg-4 {
         h2 {
             font-weight: 600;
             font-size: 20px !important;
@@ -68,5 +65,9 @@ footer {
             height: 36px;
             width: 36px;
         }
+    }
+
+    .col-lg-4:nth-child(3) {
+        padding: 0;
     }
 }
