@@ -1,4 +1,4 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
     .hiddenOnMobile {
         display: none !important;
     }
@@ -35,7 +35,6 @@
         .swiper-wrapper {
             margin-top: 0px;
             .swiper-slide {
-                height: 90vh;
                 .row {
                     .content {
                         margin-top: 20px;
@@ -81,19 +80,14 @@
                     }
                 }
             }
-
-            .fit {
-                height: fit-content !important;
-            }
         }
     }
 
     // grid of first section
-    .grid {
+    .gridSwiper {
         margin-bottom: 50px;
         .swiper-wrapper {
             .swiper-slide {
-                padding: 0 5vw;
                 div {
                     background: #f4f0f3;
                     border-radius: 6px;
@@ -154,7 +148,7 @@
                     font-size: 24px;
                     line-height: 30px;
                 }
-                
+
                 div {
                     p {
                         font-size: 18px;
@@ -272,7 +266,7 @@
                 margin-bottom: 5px;
                 img {
                     width: 100%;
-                    min-height: 60px;
+                    min-height: 100%;
                 }
             }
 
@@ -290,7 +284,7 @@
     footer {
         .col-lg-4 {
             padding: 25px !important;
-            h2{
+            h2 {
                 margin-bottom: 20px;
             }
         }
@@ -304,13 +298,13 @@
         }
     }
 
-    iframe{
+    iframe {
         height: 230px;
     }
 }
 
 // not mobile
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 991px) {
     .hiddenOnPC {
         display: none !important;
     }

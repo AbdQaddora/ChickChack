@@ -1,101 +1,106 @@
 .grid {
     margin-top: 6vh;
+    display: grid;
     margin-bottom: 10.55vh;
-    .col-md-7 {
-        .container-fluid {
-            padding: 0 !important;
-        }
+    grid-template-areas:
+        "left1 center right"
+        "left2 center right";
+    grid-template-rows: auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px !important;
+    height: fit-content;
+    .twoPart {
+        height: fit-content;
     }
-    .col-md-5,
-    .col-md-6 {
-        height: 800px;
-        margin-bottom: 15px;
-        div {
-            height: fit-content;
-            padding: 20px 15px;
-            background: #f4f0f3;
-            border-radius: 12px;
-            height: 100%;
-            h3 {
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 127%;
-                color: #1b1464;
-                span {
-                    color: #75246f;
-                }
-            }
 
-            p {
-                font-size: 16px;
-                line-height: 24px;
-                color: #808080;
-                span {
-                    color: #75246f;
-                    font-size: 18px;
-                }
-            }
+    .twoPart:nth-child(1) {
+        grid-area: left1;
+    }
 
-            a {
-                display: flex;
-                align-items: center;
-                width: fit-content;
-                text-decoration: none;
-                border-radius: 8px;
-                padding: 8px 16px;
-                font-weight: 500;
-                font-size: 12px;
-                span {
-                    margin-left: 10px;
-                }
-            }
+    .twoPart:nth-child(2) {
+        grid-area: left2;
+    }
 
-            ul li {
-                line-height: 25px;
-                color: #808080;
+    div div,
+    .twoPart {
+        background-color: #808080;
+        padding: 20px 15px;
+        height: 100%;
+        background: #f4f0f3;
+        border-radius: 12px;
+        h3 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 127%;
+            color: #1b1464;
+            span {
+                color: #75246f;
             }
         }
 
-        .towPart {
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #808080;
+            span {
+                color: #75246f;
+                font-size: 18px;
+            }
+        }
+
+        a {
             display: flex;
-            flex-direction: column;
-            background-color: #fff;
-            padding: 0;
-            .col-md-12 {
-                height: fit-content;
-                margin-bottom: 30px;
-                height: calc(45% - 15px);
-                &:last-child {
-                    height: calc(55% - 15px);
-                    margin-bottom: 0px;
-                }
+            align-items: center;
+            width: fit-content;
+            text-decoration: none;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-weight: 500;
+            font-size: 12px;
+            span {
+                margin-left: 10px;
             }
         }
+
+        ul li {
+            line-height: 25px;
+            color: #808080;
+        }
+    }
+
+    div:nth-child(3) {
+        grid-area: center;
+    }
+
+    div:nth-child(4) {
+        grid-area: right;
     }
 }
-
-.gridIndecator {
-    margin-top: 10px;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    span {
-        width: 12px;
-        height: 12px;
-        margin-right: 4px;
-        background: rgba(218, 218, 218, 0.67);
-        border-radius: 50%;
+.gridSwiper {
+    .swiper-slide {
+        background-color: #808080;
+        padding: 20px 15px;
+        background: #f4f0f3;
+        border-radius: 12px;
     }
-    span.active{
-        background-color: #75246f;
-    }
-}
-@media screen and (min-width: 1100px) {
-    .grid .col-md-5,
-    .grid .col-md-6 {
-        min-height: 650px !important;
+
+    .gridIndecator {
+        margin-top: 10px;
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            width: 12px;
+            height: 12px;
+            margin-right: 4px;
+            background: rgba(218, 218, 218, 0.67);
+            border-radius: 50%;
+        }
+        span.active {
+            background-color: #75246f;
+        }
     }
 }
