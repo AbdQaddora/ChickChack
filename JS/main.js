@@ -2,7 +2,8 @@ let currentTecSlid = 1;
 document.querySelector(`.technologies .row:nth-of-type(${currentTecSlid})`).classList.add("active");
 document.querySelector(` .TecController .indicator:nth-of-type(${currentTecSlid})`).classList.add("active");
 document.querySelector(` .TecController2 .indicator:nth-of-type(${currentTecSlid})`).classList.add("active");
-
+document.getElementById('vid1').play();
+document.getElementById('vid2').play();
 function TecSlidChanger(x) {
     document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.remove("active");
     document.querySelector(` .TecController .indicator:nth-child(${currentTecSlid})`).classList.remove("active");
