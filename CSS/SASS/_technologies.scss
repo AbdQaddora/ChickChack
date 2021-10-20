@@ -93,11 +93,11 @@
 
         video {
             border-radius: 8px;
-            // position: relative;
-            // top: 50%;
-            height: 100%;
-            //    transform: translateY(-50%);
-            background-color: black;
+            position: relative;
+            top: 50%;
+            // height: 100%;
+            transform: translateY(-50%);
+            // background-color: black;
         }
     }
     .row.active {

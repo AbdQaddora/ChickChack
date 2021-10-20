@@ -662,8 +662,10 @@ iframe {
 
 .technologies .row video {
   border-radius: 8px;
-  height: 100%;
-  background-color: black;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .technologies .row.active {
