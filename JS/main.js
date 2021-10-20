@@ -22,10 +22,29 @@ function TecSlidChangerMobile(x) {
     document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.remove("active");
     document.querySelector(` .TecController2 .indicator:nth-child(${currentTecSlid})`).classList.remove("active");
     currentTecSlid = x;
-    if (currentTecSlid < 5) {
-        document.querySelector(` .TecController2`).style = `transform: translateX(-${180 * (currentTecSlid - 1)}px);`;
+    let movePx = 180;
+    if (window.innerWidth > 480 && window.innerWidth < 550) {
+        movePx = 160;
+    } else if (window.innerWidth > 550 && window.innerWidth < 600) {
+        movePx = 140;
+    } else if (window.innerWidth > 600 && window.innerWidth < 650) {
+        movePx = 120;
+    } else if (window.innerWidth > 650 && window.innerWidth < 700) {
+        movePx = 100;
+    } else if (window.innerWidth > 700 && window.innerWidth < 750) {
+        movePx = 80;
+    } else if (window.innerWidth > 750 && window.innerWidth < 800) {
+        movePx = 70;
+    } else if (window.innerWidth > 800 && window.innerWidth < 850) {
+        movePx = 60;
     } else {
-        document.querySelector(` .TecController2`).style = `transform: translateX(-${180 * (currentTecSlid - 2) + 35}px);`;
+        movePx = 40;
+    }
+
+    if (currentTecSlid < 5) {
+        document.querySelector(` .TecController2`).style = `transform: translateX(-${movePx * (currentTecSlid - 1)}px);`;
+    } else {
+        document.querySelector(` .TecController2`).style = `transform: translateX(-${movePx * (currentTecSlid - 2) + 35}px);`;
     }
 
 
