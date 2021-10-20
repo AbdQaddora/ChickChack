@@ -1,9 +1,7 @@
 .TecController {
-    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     .indicator {
         cursor: pointer;
         @include userSelect(none);
@@ -95,9 +93,7 @@
             border-radius: 8px;
             position: relative;
             top: 50%;
-            // height: 100%;
             transform: translateY(-50%);
-            // background-color: black;
         }
     }
     .row.active {

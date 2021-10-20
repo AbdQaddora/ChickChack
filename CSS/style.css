@@ -543,7 +543,6 @@ iframe {
 }
 
 .TecController {
-  width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,8 +550,6 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .TecController .indicator {
@@ -1371,14 +1368,17 @@ footer .col-lg-4:nth-child(3) {
 
 @media screen and (max-width: 1140px) {
   #about .content::before {
-    left: -150px;
+    left: -160px;
   }
   #about .content::after {
-    right: -150px;
+    right: -160px;
+  }
+  .TecController .indicator {
+    font-size: 14px;
   }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 2000px) {
   #about .content::before {
     content: "";
   }

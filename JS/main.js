@@ -2,8 +2,12 @@ let currentTecSlid = 1;
 document.querySelector(`.technologies .row:nth-of-type(${currentTecSlid})`).classList.add("active");
 document.querySelector(` .TecController .indicator:nth-of-type(${currentTecSlid})`).classList.add("active");
 document.querySelector(` .TecController2 .indicator:nth-of-type(${currentTecSlid})`).classList.add("active");
-document.getElementById('vid1').play();
-document.getElementById('vid2').play();
+
+setTimeout(() => {
+    document.getElementById('vid2').play();
+    document.getElementById('vid1').play();
+}, 200);
+
 function TecSlidChanger(x) {
     document.querySelector(`.technologies .row:nth-child(${currentTecSlid})`).classList.remove("active");
     document.querySelector(` .TecController .indicator:nth-child(${currentTecSlid})`).classList.remove("active");
@@ -73,11 +77,18 @@ var swiper2 = new Swiper(".mySwiper2", {
     }
 });
 
-document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "display:none;";
+
+if (window.innerWidth < 990) {
+    document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "height:0px";
+}
 swiper2.on('slideChange', function () {
-    if (swiper2.activeIndex == 2) {
-        document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "display:block;";
-    } else {
-        document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "display:none;";
+    if (window.innerWidth < 990) {
+        if (swiper2.activeIndex == 2) {
+            document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "height:auto";
+            console.log("test");
+        } else {
+            console.log("test");
+            document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "height:0px";
+        }
     }
 });

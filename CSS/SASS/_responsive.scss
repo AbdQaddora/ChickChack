@@ -340,18 +340,22 @@
     #about {
         .content {
             &::before {
-                left: -150px;
+                left: -160px;
             }
 
             &::after {
-                right: -150px;
+                right: -160px;
             }
         }
+    }
+
+    .TecController .indicator {
+        font-size: 14px;
     }
 }
 
 // for left and right hand
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 2000px) {
     #about {
         .content {
             &::before {
