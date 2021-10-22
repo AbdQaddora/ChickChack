@@ -93,7 +93,7 @@
                     background: #f4f0f3;
                     border-radius: 6px;
                     padding: 15px;
-                    height: 550px;
+                    min-height: 550px;
                     h3 {
                         font-style: normal;
                         font-weight: bold;
@@ -173,10 +173,10 @@
         }
     }
 
-    .swiper-pagination{
+    .swiper-pagination {
         padding-left: 5vw;
         margin-bottom: 30px !important;
-        .swiper-pagination-bullet{
+        .swiper-pagination-bullet {
             font-size: 14px;
             padding: 0 10px;
         }
