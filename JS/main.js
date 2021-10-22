@@ -1,8 +1,3 @@
-setTimeout(() => {
-    document.getElementById('vid2').play();
-    document.getElementById('vid1').play();
-}, 200);
-
 function mobileNavShow() {
     document.querySelector(".mobileNav").style = "left: 0vw;";
 }
