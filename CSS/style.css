@@ -542,47 +542,54 @@ iframe {
   background-color: #75246f;
 }
 
-.TecController {
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.TecController .indicator {
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-  padding: 0px 14px;
-  margin: 20px 20px 0px 0px;
-  font-size: 16px;
-  line-height: 53px;
-  letter-spacing: -0.165px;
-  color: #979797;
-  background: rgba(218, 218, 218, 0.28);
-  border-radius: 123px;
-}
-
-.TecController .active {
-  background: #75246f;
-  color: #fff;
-}
-
 .technologies {
   position: relative;
   margin-top: 75px;
 }
 
-.technologies .row {
-  display: none;
-  height: 100%;
+.technologies .swiper-pagination {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 70px auto;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.technologies .swiper-pagination .swiper-pagination-bullet {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  white-space: nowrap;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0px 14px;
+  background: rgba(218, 218, 218, 0.28);
+  border-radius: 123px;
+  color: #979797;
+  opacity: 1;
+  font-size: 16px;
+  line-height: 53px;
+  letter-spacing: -0.165px;
+}
+
+.technologies .swiper-pagination .swiper-pagination-bullet-active {
+  background: #75246f;
+  color: #fff;
 }
 
 .technologies .row .content {
@@ -1222,41 +1229,13 @@ footer .col-lg-4:nth-child(3) {
     border-radius: 12px;
     padding: 7px 27px;
   }
-  .overFlow {
-    width: 100vw;
-    overflow: hidden;
-  }
-  .overFlow .TecController2.hiddenOnPC {
-    width: 1150px;
+  .swiper-pagination {
     padding-left: 5vw;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    margin-bottom: 30px !important;
   }
-  .overFlow .TecController2.hiddenOnPC .indicator {
-    display: block;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-    -webkit-transition: background-color 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-    width: 180px !important;
-    margin-right: 10px;
+  .swiper-pagination .swiper-pagination-bullet {
     font-size: 14px;
-    line-height: 53px;
-    letter-spacing: -0.165px;
-    color: #979797;
-    background: rgba(218, 218, 218, 0.28);
-    border-radius: 123px;
-  }
-  .overFlow .TecController2.hiddenOnPC .active {
-    background: #75246f;
-    color: #fff;
+    padding: 0 10px;
   }
   #about h2 {
     font-size: 35px;

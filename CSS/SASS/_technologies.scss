@@ -1,33 +1,35 @@
-.TecController {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    .indicator {
-        cursor: pointer;
-        @include userSelect(none);
-        transition: background-color 0.3s ease-in-out;
-        padding: 0px 14px;
-        margin: 20px 20px 0px 0px;
-        font-size: 16px;
-        line-height: 53px;
-        letter-spacing: -0.165px;
-        color: #979797;
-        background: rgba(218, 218, 218, 0.28);
-        border-radius: 123px;
-    }
-
-    .active {
-        background: #75246f;
-        color: #fff;
-    }
-}
-
 .technologies {
     position: relative;
     margin-top: 75px;
-    .row {
-        display: none;
-        height: 100%;
+    .swiper-pagination {
+        position: static;
+        display: flex;
+        width: fit-content;
+        flex-wrap: nowrap;
+        margin: 70px auto;
+        transition: transform 0.3s ease-in-out;
+        .swiper-pagination-bullet {
+            cursor: pointer;
+            @include userSelect(none);
+            width: fit-content;
+            white-space: nowrap;
+            height: fit-content;
+            padding: 0px 14px;
+            background: rgba(218, 218, 218, 0.28);
+            border-radius: 123px;
+            color: #979797;
+            opacity: 1;
+            font-size: 16px;
+            line-height: 53px;
+            letter-spacing: -0.165px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #75246f;
+            color: #fff;
+        }
+    }
+    .row {    
         .content {
             display: flex;
             flex-direction: column;
