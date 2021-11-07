@@ -1,0 +1,106 @@
+{
+    "nav": {
+        "ul": [
+            "Home",
+            "Collaborate",
+            "Technologies",
+            "About Us"
+        ],
+        "signIn": "Sign In",
+        "joinNow": "Join Now"
+    },
+    "sliderSection": [
+        {
+            "h2": "Your mirror to",
+            "span1": "new dimensions",
+            "p": "Your next-level social platform is here to reshape communication, interactivity and creativity. Socially engaging and technologically oriented, have your own virtual world in the palm of your hands, your imagination is the only limit.",
+            "img": "img1.png",
+            "btn": "Stand out! Join us Now"
+        },
+        {
+            "h2": "CREATE, CONNECT,",
+            "span1": "CAPTURE",
+            "span2": "Reshape your idea of a social platform!",
+            "p": "Create your personal profile, a dimension that is as unique as you are, customize your 3D character, design your virtual space, capture, share, earn respect and grow your social presence.",
+            "img": "img2.png",
+            "btn": "Stand out! Join us Now"
+        },
+        {
+            "h2": "IMAGINE, BUILD,",
+            "span1": "STAND OUT",
+            "span2": "We made sure that this virtual dimension is YOURS and tailored to your liking:",
+            "img": "img3.png",
+            "ul": [
+                "A futuristic build system allowing you to immerse in the world of your dreams",
+                "Build your house, venue, or shop and modify it to your preferences",
+                "Share your creation with the world! Invite your friends, join them in their dimension or visit your favorite influencer’s own world and meet them"
+            ],
+            "btn": "Stand out! Join us Now"
+        },
+        {
+            "h2": "INVITE, INTERACT,",
+            "span1": "ENJOY",
+            "p": "Invite your friends and family to enjoy your social activities from around the globe and at any time, you can host or attend gatherings, play games, explore the virtual world, visit each others’ unique 3D houses, shop together, and share a wonderful interactive experience together.",
+            "img": "img4.png",
+            "btn": "Stand out! Join us Now"
+        },
+        {
+            "h2": "TRY IT BEFORE",
+            "span1": "YOU BUY IT",
+            "p": "Try our new social shopping experience empowered by the latest technologies: shop with your friends, browse for products and services, view them in 3D, try them on in AR! Buy them with the safest payment methods and get them delivered to your doorstep",
+            "img": "img5.png",
+            "btn": "Stand out! Join us Now"
+        }
+    ],
+    "grid": [
+        {
+            "h3": "COLLABORATE ",
+            "span1": "GROW",
+            "p": "From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow your brand, futurize your services, maximize your revenue and reach a broader audience. CheckChack provides business owners and service providers with the most advanced dashboard to have complete control over every aspect of their business.",
+            "span2": "Interested? Let’s Collaborate!",
+            "a": "Read More",
+            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+        },
+        {
+            "h3": "ACHIEVE YOUR ",
+            "span1": "GOALS",
+            "ul": [
+                "Drive sales",
+                "Engage customers with an interactive social shopping experience",
+                "Reduce returns through virtual try-on",
+                "Grow your social media presence and have every aspect of your business under your thorough monitoring",
+                "Extend your audience reach by choosing to join renowned malls or even choose to host your business in private celebrity and influencer virtual spaces"
+            ],
+            "span2": "Interested? Let’s Collaborate!",
+            "a": "Read More",
+            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+        },
+        {
+            "h3": "DEVELOP, ADVANCE",
+            "ul": [
+                "Design and build your shop or point of sale from scratch",
+                "Choose your preferred location, like designated virtual malls, showrooms, expos and others",
+                "Display your products and services in 3D",
+                "Offer product try-on in AR",
+                "Upload your inventory with a press of a button",
+                "Arrange your shop to your preference, with help desks, banners or panels"
+            ],
+            "span2": "Interested? Let’s Collaborate!",
+            "a": "Read More",
+            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+        },
+        {
+            "h3": "REACH, ",
+            "span1": "PROSPER",
+            "ul": [
+                "Benefit from the self-learning AI bot, taking care of your customer support needs and improving performance constantly",
+                "Support for online services like travel, booking and subscriptions",
+                "Add safe payment methods, and link your business to the shipping/delivery company of your choice",
+                "Grow your brand with extensive marketing solutions: Virtual public spaces to place your banners, ad boards or panels."
+            ],
+            "span2": "Interested? Let’s Collaborate!",
+            "a": "Read More",
+            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+        }
+    ]
+}

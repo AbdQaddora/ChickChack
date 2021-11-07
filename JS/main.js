@@ -1,3 +1,4 @@
+
 function mobileNavShow() {
     document.querySelector(".mobileNav").style = "left: 0vw;";
 }
@@ -50,9 +51,7 @@ swiper2.on('slideChange', function () {
     if (window.innerWidth < 990) {
         if (swiper2.activeIndex == 2) {
             document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "height:auto";
-            console.log("test");
         } else {
-            console.log("test");
             document.querySelector('.sliderSection .swiper-wrapper .swiper-slide:nth-child(3)').style = "height:0px";
         }
     }

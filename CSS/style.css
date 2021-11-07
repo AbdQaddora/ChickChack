@@ -329,17 +329,12 @@ iframe {
   background-position: center center;
 }
 
-.sliderSection .mySwiper2 .row .images .img1 {
-  background-image: url(../images/header/img1.png);
-}
-
-.sliderSection .mySwiper2 .row .images .img2 {
-  background-image: url(../images/header/img2.png);
+.sliderSection .mySwiper2 .row .images .img:nth-of-type(2) {
   position: relative;
   overflow: visible !important;
 }
 
-.sliderSection .mySwiper2 .row .images .img2::before {
+.sliderSection .mySwiper2 .row .images .img:nth-of-type(2)::before {
   content: "";
   height: 1px;
   width: 1px;
@@ -351,18 +346,6 @@ iframe {
   -ms-box-shadow: 0px 100px 200px 50px #706f6fb8;
   -o-box-shadow: 0px 100px 200px 50px #706f6fb8;
   box-shadow: 0px 100px 200px 50px #706f6fb8;
-}
-
-.sliderSection .mySwiper2 .row .images .img3 {
-  background-image: url(../images/header/img3.png);
-}
-
-.sliderSection .mySwiper2 .row .images .img4 {
-  background-image: url(../images/header/img4.png);
-}
-
-.sliderSection .mySwiper2 .row .images .img5 {
-  background-image: url(../images/header/img5.png);
 }
 
 .sliderSection .mySwiper2 .circle {
