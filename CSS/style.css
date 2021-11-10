@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helveticaneuelt-arabic-55-roman.ttf");
+}
+
+html {
+  font-size: 16px;
+}
+
 /* font-family: 'Poppins', sans-serif; */
-* {
+body {
   font-family: "Poppins", sans-serif;
   scroll-padding-top: 25px;
 }
@@ -12,12 +21,6 @@
   top: -5.53%;
   bottom: 90.7%;
   display: none;
-}
-
-iframe {
-  width: 100%;
-  height: 550px;
-  border-radius: 15px;
 }
 
 .main_back {
@@ -121,7 +124,7 @@ iframe {
 .navbar .container-fluid .navbar-nav .nav-link {
   margin-left: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 25px;
   color: #a3a3a3 !important;
 }
@@ -132,7 +135,7 @@ iframe {
 
 .navbar .container-fluid .navbar-nav .nav-link.active {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   letter-spacing: -1px;
   color: #75246f !important;
@@ -146,7 +149,7 @@ iframe {
 
 .navbar .container-fluid .navbar-nav .nav-btn .nav-link {
   color: #ffffff !important;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   letter-spacing: -0.17px;
   background: #75246f;
@@ -208,9 +211,9 @@ iframe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 15px 20% 15px 0;
 }
 
@@ -251,7 +254,7 @@ iframe {
 .sliderSection .mySwiper2 .row .content h2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 4.5rem;
   line-height: 108%;
   color: #1b1464;
 }
@@ -263,7 +266,7 @@ iframe {
 .sliderSection .mySwiper2 .row .content ul li {
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   color: #808080;
 }
@@ -276,7 +279,7 @@ iframe {
   margin-bottom: 7vh;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   color: #808080;
 }
@@ -295,7 +298,7 @@ iframe {
   padding: 15px 32px !important;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 36px;
 }
 
@@ -423,7 +426,7 @@ iframe {
 .grid .twoPart h3 {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 127%;
   color: #1b1464;
 }
@@ -435,7 +438,7 @@ iframe {
 
 .grid div div p,
 .grid .twoPart p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   color: #808080;
 }
@@ -443,7 +446,7 @@ iframe {
 .grid div div p span,
 .grid .twoPart p span {
   color: #75246f;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .grid div div a,
@@ -461,12 +464,12 @@ iframe {
   border-radius: 8px;
   padding: 8px 16px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .grid div div a span,
 .grid .twoPart a span {
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 .grid div div ul li,
@@ -565,7 +568,7 @@ iframe {
   border-radius: 123px;
   color: #979797;
   opacity: 1;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 53px;
   letter-spacing: -0.165px;
 }
@@ -590,7 +593,7 @@ iframe {
 
 .technologies .row .content h2 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 53px;
   letter-spacing: -0.165px;
   color: #1b1464;
@@ -603,7 +606,7 @@ iframe {
 
 .technologies .row .content p {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 42px;
   letter-spacing: -0.165px;
   color: #b59db3;
@@ -612,7 +615,7 @@ iframe {
 .technologies .row .content li {
   color: #a3a3a3;
   font-weight: normal;
-  font-size: 19px;
+  font-size: 1.187rem;
   line-height: 42px;
 }
 
@@ -620,7 +623,7 @@ iframe {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 36px;
   border-radius: 12px;
   padding: 15px 32px;
@@ -633,18 +636,6 @@ iframe {
   background-size: cover;
   background-position: center;
   border-radius: 12px;
-}
-
-.technologies .row .img2 {
-  background-image: url(../images/technologies/tec2.png);
-}
-
-.technologies .row .img3 {
-  background-image: url(../images/technologies/tec3.png);
-}
-
-.technologies .row .img5 {
-  background-image: url(../images/technologies/tec5.png);
 }
 
 .technologies .row video {
@@ -683,7 +674,7 @@ iframe {
 #about h2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 108%;
   /* or 52px */
   color: #75246f;
@@ -716,7 +707,7 @@ iframe {
 
 #about .content p {
   color: #1b1464;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 190%;
   width: 577px;
 }
@@ -768,7 +759,7 @@ iframe {
 .download h2 {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 108%;
   color: #75246f;
   background: -webkit-gradient(linear, left bottom, left top, from(#f4f0f3), to(#f4f0f3)), #f4f0f3;
@@ -808,7 +799,7 @@ iframe {
 
 .contact .col-lg-8 .row h3 {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
   letter-spacing: -1px;
   color: #75246f;
@@ -816,7 +807,7 @@ iframe {
 
 .contact .col-lg-8 .row h2 {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 65px;
   letter-spacing: -2px;
   color: #1b1464;
@@ -824,14 +815,14 @@ iframe {
 
 .contact .col-lg-8 .row p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   color: #808080;
 }
 
 .contact .col-lg-8 .row input,
 .contact .col-lg-8 .row textarea {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   background: #ffffff;
   border-radius: 12px;
@@ -864,14 +855,14 @@ iframe {
 }
 
 .contact .myCard h2 {
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 55px;
   letter-spacing: -1.5px;
   color: #ffffff;
 }
 
 .contact .myCard > p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   padding-bottom: 23px;
   border-bottom: 1px solid #ffffff7a;
@@ -887,25 +878,25 @@ iframe {
 }
 
 .contact .myCard .innerCard > span {
-  font-size: 36px !important;
-  margin-right: 25px;
+  font-size: 2.25rem !important;
+  margin: 0 15px;
   padding: 25px;
   background-color: rgba(8, 20, 32, 0.15);
   border-radius: 50%;
 }
 
 .contact .myCard .innerCard .content h3 {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
 }
 
 .contact .myCard .innerCard .content p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
 }
 
 .contact .myCard .innerCard .content p span {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.75);
 }
@@ -922,14 +913,14 @@ footer .col-lg-4 {
 
 footer .col-lg-4 h2 {
   font-weight: 600;
-  font-size: 20px !important;
+  font-size: 1.25rem !important;
   line-height: 27px;
   color: #1b1464;
   margin-bottom: 40px;
 }
 
 footer .col-lg-4 p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
 }
 
@@ -947,7 +938,7 @@ footer .col-lg-4 div {
 
 footer .col-lg-4 div a {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 25px;
   color: #979797;
   width: 50%;
@@ -955,7 +946,7 @@ footer .col-lg-4 div a {
 }
 
 footer .col-lg-4:nth-child(1) p {
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   color: #808080;
   margin-top: 15px;
@@ -986,7 +977,7 @@ footer .col-lg-4:nth-child(1) p:last-child {
 
 footer .col-lg-4:nth-child(1) p:last-child a {
   color: #1b1464;
-  font-size: 25px;
+  font-size: 1.56rem;
 }
 
 footer .col-lg-4:nth-child(1) img {
@@ -1030,7 +1021,7 @@ footer .col-lg-4:nth-child(3) {
       -ms-user-select: none;
           user-select: none;
   color: white;
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .mobileNav ul .nav-links {

@@ -59,7 +59,7 @@
             "p": "From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow your brand, futurize your services, maximize your revenue and reach a broader audience. CheckChack provides business owners and service providers with the most advanced dashboard to have complete control over every aspect of their business.",
             "span2": "Interested? Let’s Collaborate!",
             "a": "Read More",
-            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+            "arrow": "<span class='material-icons'>east</span>"
         },
         {
             "h3": "ACHIEVE YOUR ",
@@ -73,10 +73,11 @@
             ],
             "span2": "Interested? Let’s Collaborate!",
             "a": "Read More",
-            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+            "arrow": "<span class='material-icons'>east</span>"
         },
         {
-            "h3": "DEVELOP, ADVANCE",
+            "h3": "DEVELOP, ",
+            "span1": "ADVANCE",
             "ul": [
                 "Design and build your shop or point of sale from scratch",
                 "Choose your preferred location, like designated virtual malls, showrooms, expos and others",
@@ -87,7 +88,7 @@
             ],
             "span2": "Interested? Let’s Collaborate!",
             "a": "Read More",
-            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+            "arrow": "<span class='material-icons'>east</span>"
         },
         {
             "h3": "REACH, ",
@@ -100,7 +101,119 @@
             ],
             "span2": "Interested? Let’s Collaborate!",
             "a": "Read More",
-            "arrow": "<span class='material-icons'>arrow_right_alt</span>"
+            "arrow": "<span class='material-icons'>east</span>"
         }
-    ]
+    ],
+    "technologies": [
+        {
+            "h2": "AUGMENTED REALITY & PRODUCT ",
+            "span1": "TRY-ON",
+            "p": "A BRAND-NEW IMMERSIVE WAY TO ADD REALISM TO THE SHOPPING EXPERIENCE!",
+            "ul": [
+                "Apply face mask and AR filters to your videos",
+                "Try on clothes, makeup, glasses, furniture, and other products before you buy them",
+                "Share your experience with your friend"
+            ],
+            "ReadMore": "Read More",
+            "video": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4"
+        },
+        {
+            "h2": "AI & MACHINE ",
+            "span1": "LEARNING",
+            "p": "THE MOST TECHNOLOGICALLY ADVANCED CUSTOMER SUPPORT FEATURE",
+            "ul": [
+                "Add self learning AI bots to your stor",
+                "Gather analytical data and improve your services",
+                "Provide fast and easy support to your customers",
+                "Customize your bot’s appearance and utility to fit your brand, market your products and services and perform sales."
+            ],
+            "ReadMore": "Read More",
+            "img": "tec2.png"
+        },
+        {
+            "h2": "DASHBOARD",
+            "p": "COMPREHENSIVE CONTROL DASHBOARD",
+            "ul": [
+                "Exclusive feature allowing you to easily add your product’s model, customize it or choose from a huge library of templates to suit your needs",
+                "Control every aspect of your business activities",
+                "Upload your inventory and services easily and display them with the latest 3D and AR technologies",
+                "Monitor your shop or venue, arrange your showroom and update everything on the go."
+            ],
+            "ReadMore": "Read More",
+            "img": "tec3.png"
+        },
+        {
+            "h2": "VIRTUAL ",
+            "span1": "SERVICES",
+            "p": "VIRTUALIZE ALL YOUR BUSINESS ACTIVITIES",
+            "ul": [
+                "Host virtual events, conferences, gatherings and concerts in customizable environments and ready-made templates, with extensive backstage management",
+                "E-commerce integration services and solutions",
+                "Transform your venue into a fully interactive realistic 3D world",
+                "Hotels, real-estate, touristic sites, remote education institution and others are all among the services we support"
+            ],
+            "ReadMore": "Read More",
+            "video": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4"
+        },
+        {
+            "h2": "3D SCANNING AND ",
+            "span1": "MODELLING",
+            "p": "AS REAL AS IT GETS!",
+            "ul": [
+                "Scan your face",
+                "Create your realistic 3D character",
+                "Scan any product and import it to our system in multiple qualities (low poly or high poly)",
+                "Enjoy an immersive social experience"
+            ],
+            "ReadMore": "Read More",
+            "img": "tec5.png"
+        }
+    ],
+    "tecController": [
+        "Augmented Reality",
+        "AI & Machine Learning",
+        "Dashboard",
+        "Virtual Services",
+        "3D scaninng & modeling"
+    ],
+    "about": {
+        "h2": "About Us!",
+        "p": "CheckChack took the leading role in achieving a unique sociality approach that is guaranteed to stand out among competitors.<br /> Achieving this tricky task, through innovation, persistence, integrating the latest technologies like Augmented Reality, Virtual Reality and 3D scanning to provide you with a platform worthy of your time and presence."
+    },
+    "download": {
+        "h2": "Download Now!",
+        "img1": "<img src='./images/download/download2.png'alt=''>",
+        "img2": "<img src='./images/download/download3.png'alt=''>",
+        "img3": "<img src='./images/download/download1.png'alt=''>",
+        "img4": "<img src='./images/download/download4.png'alt=''>"
+    },
+    "contact": {
+        "theForm": {
+            "h3": "Contact Us",
+            "h2": "Send A Message",
+            "p": "We are social at our core! Contact us.",
+            "email": "Your Email",
+            "phone": "Phone number",
+            "textArea": "Your Message Here",
+            "btn": "Send Message"
+        },
+        "card": {
+            "h2": "Get In Touch",
+            "p": "We are here for you, Just contact us!",
+            "innerCard1": {
+                "title": "Email us :",
+                "e1": "info@chickchack.net",
+                "e2": "info@chickchack.net"
+            },
+            "innerCard2": {
+                "title": "Phone us :",
+                "e1": "+971 4 576 2549",
+                "e2": "+971 4 576 2549"
+            },
+            "innerCard3": {
+                "title": "Visit us :",
+                "p": "UAE, Bussiness Bay, The Citadel Tower #601"
+            }
+        }
+    }
 }

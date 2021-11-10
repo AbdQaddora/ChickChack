@@ -57,8 +57,7 @@ swiper2.on('slideChange', function () {
     }
 });
 
-
-let arr = ['Augmented Reality', 'AI & Machine Learning', 'Dashboard', 'Virtual Services', '3D scaninng & modeling'];
+let arr = tecControllerContentArr;
 var swiper3 = new Swiper(".mySwiper3", {
     spaceBetween: 200,
     pagination: {
