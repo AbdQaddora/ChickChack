@@ -97,11 +97,16 @@ function TecSlidChangerMobile() {
     } else if (window.innerWidth > 850) {
         movePx = 40;
     }
-
+    let direction = "";
+    if(body.getAttribute("dir") == "ltr"){
+        direction = "-";
+    }else{
+        direction = "+";
+    }
     if (currentTecSlid < 5) {
-        document.querySelector(`.TecController`).style = `transform: translateX(-${movePx * (currentTecSlid - 1)}px);`;
+        document.querySelector(`.TecController`).style = `transform: translateX(${direction}${movePx * (currentTecSlid - 1)}px);`;
     } else {
-        document.querySelector(`.TecController`).style = `transform: translateX(-${movePx * (currentTecSlid - 2) + 35}px);`;
+        document.querySelector(`.TecController`).style = `transform: translateX(${direction}${movePx * (currentTecSlid - 2) + 35}px);`;
     }
 }
 

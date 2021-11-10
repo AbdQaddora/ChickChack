@@ -237,19 +237,26 @@ function contactFill(contact) {
 
 
 function changeLanguge() {
-    document.querySelector("body").setAttribute("dir", "rtl");
-    document.querySelector("body").style = "font-family:Helvetica;";
-    document.querySelector("html").style = "font-size:18px;";
-    theRequest.open(
-        "GET",
-        "./JS/JSON/arabic.json",
-        true
-    );
-    // theRequest.open(
-    //     "GET",
-    //     `./JS/JSON/english.json`,
-    //     true
-    // );
+    let luanguage = "ar";
+    if (luanguage = "ar") {
+        document.querySelector("body").setAttribute("dir", "rtl");
+        document.querySelector("body").style = "font-family:Helvetica;";
+        document.querySelector("html").style = "font-size:18px;";
+        theRequest.open(
+            "GET",
+            "./JS/JSON/arabic.json",
+            true
+        );
+    } else if (luanguage = "en") {
+        document.querySelector("body").setAttribute("dir", "ltr");
+        document.querySelector("body").style = "font-family:'Poppins', sans-serif;";
+        document.querySelector("html").style = "font-size:16px;";
+        theRequest.open(
+            "GET",
+            `./JS/JSON/english.json`,
+            true
+        );
+    }
 
     theRequest.send();
 }
