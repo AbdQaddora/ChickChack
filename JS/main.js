@@ -1,17 +1,17 @@
 
 function mobileNavShow() {
     if (document.querySelector(document.querySelector("body").getAttribute("dir") == "ltr")) {
-        document.querySelector(".mobileNav").style = "left: 30vw;";
+        document.querySelector(".mobileNav").style = "left: 0vw;";
     } else {
-        document.querySelector(".mobileNav").style = "right: 30vw;";
+        document.querySelector(".mobileNav").style = "right: 0vw;";
     }
 }
 
 function mobileNavhide() {
     if (document.querySelector(document.querySelector("body").getAttribute("dir") == "ltr")) {
-        document.querySelector(".mobileNav").style = "left: -100vw;";
+        document.querySelector(".mobileNav").style = "left: -70vw;";
     } else {
-        document.querySelector(".mobileNav").style = "right: -100vw;;";
+        document.querySelector(".mobileNav").style = "right: -70vw;;";
     }
 }
 
