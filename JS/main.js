@@ -1,10 +1,18 @@
 
 function mobileNavShow() {
-    document.querySelector(".mobileNav").style = "left: 0vw;";
+    if (document.querySelector(document.querySelector("body").getAttribute("dir") == "ltr")) {
+        document.querySelector(".mobileNav").style = "left: 30vw;";
+    } else {
+        document.querySelector(".mobileNav").style = "right: 30vw;";
+    }
 }
 
 function mobileNavhide() {
-    document.querySelector(".mobileNav").style = "left: -70vw;";
+    if (document.querySelector(document.querySelector("body").getAttribute("dir") == "ltr")) {
+        document.querySelector(".mobileNav").style = "left: -100vw;";
+    } else {
+        document.querySelector(".mobileNav").style = "right: -100vw;;";
+    }
 }
 
 var swiper = new Swiper(".mySwiper", {
@@ -98,9 +106,9 @@ function TecSlidChangerMobile() {
         movePx = 40;
     }
     let direction = "";
-    if(body.getAttribute("dir") == "ltr"){
+    if (document.querySelector("body").getAttribute("dir") == "ltr") {
         direction = "-";
-    }else{
+    } else {
         direction = "+";
     }
     if (currentTecSlid < 5) {

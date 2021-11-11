@@ -11,8 +11,8 @@
         }
         .navbar-toggler {
             margin-right: 20px;
-            width: 24px;
             height: 100%;
+            display: contents;
             .navbar-toggler-icon {
                 background-image: url(../images/toggler.svg);
                 background-size: 110%;
@@ -24,7 +24,7 @@
         }
 
         img {
-            margin-left: 15px;
+            margin: 0 15px;
             height: 40px;
             width: 40px;
         }
@@ -57,7 +57,7 @@
 
                         ul li {
                             font-size: 16px !important;
-                            text-align: left;
+                            // text-align: left;
                         }
 
                         .main_back {
