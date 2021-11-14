@@ -115,7 +115,8 @@
                 "Share your experience with your friend"
             ],
             "ReadMore": "Read More",
-            "video": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4"
+            "video1": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4",
+            "video2": "./assets/video/02.mp4"
         },
         {
             "h2": "AI & MACHINE ",
@@ -153,7 +154,8 @@
                 "Hotels, real-estate, touristic sites, remote education institution and others are all among the services we support"
             ],
             "ReadMore": "Read More",
-            "video": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4"
+            "video1": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4",
+            "video2": "./assets/video/01.mp4"
         },
         {
             "h2": "3D SCANNING AND ",
@@ -182,10 +184,10 @@
     },
     "download": {
         "h2": "Download Now!",
-        "img1": "<img src='./images/download/download2.png'alt=''>",
-        "img2": "<img src='./images/download/download3.png'alt=''>",
-        "img3": "<img src='./images/download/download1.png'alt=''>",
-        "img4": "<img src='./images/download/download4.png'alt=''>"
+        "img1": "<img src='./assets/images/download/download2.png'alt=''>",
+        "img2": "<img src='./assets/images/download/download3.png'alt=''>",
+        "img3": "<img src='./assets/images/download/download1.png'alt=''>",
+        "img4": "<img src='./assets/images/download/download4.png'alt=''>"
     },
     "contact": {
         "theForm": {
@@ -214,6 +216,26 @@
                 "title": "Visit us :",
                 "p": "UAE, Bussiness Bay, The Citadel Tower #601"
             }
+        }
+    },
+    "footer": {
+        "col_lg_4_1": {
+            "p": "From choice to checkout, CheckChack is the perfect platform for your business to bloom: grow your brand, futurize your services.."
+        },
+        "col_lg_4_2": {
+            "h2": "Contact Info",
+            "p1": "<span>Address :</span>UAE, Bussiness Bay, The Citadel Tower #601",
+            "p2": "<span>Phone: </span>+971 4 576 2549",
+            "p3": "<span>Email: </span>Info@chickchack.net"
+        },
+        "col_lg_4_3": {
+            "h2": "Quick Links",
+            "a1": "Home",
+            "a2": "Contact",
+            "a3": "About",
+            "a4": "Blog",
+            "a5": "Privacy & policy",
+            "a6": "Term & Condition"
         }
     }
 }

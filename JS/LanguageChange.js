@@ -26,6 +26,9 @@ function fillContent() {
 
             let contact = content.contact;
             contactFill(contact);
+
+            let footer = content.footer;
+            footerFill(footer);
         }
 
     }
@@ -96,7 +99,7 @@ function headerFill(sliderSection) {
                     <div class="col-lg-5">
                             <div class="images">
                                 <div class="indecators"></div>
-                                <div class="img" style="background-image: url(./images/header/${element.img});"></div>
+                                <div class="img" style="background-image: url(./assets/images/header/${element.img});"></div>
                                 </div>
                             </div>
                         </div>
@@ -183,12 +186,13 @@ function techFill(technologies) {
             </div>
             <div class="images col-md-6">`
 
-        if (element.video !== undefined) {
-            slid += `<video autoplay muted loop width="100%" id="vid2">
-                        <source src="${element.video}" type="video/mp4" />
+        if (element.video1 !== undefined) {
+            slid += `<video autoplay muted loop width="100%" class="vid">
+                        <source src="${element.video2}" type="video/mp4" />
+                        <source src="${element.video1}" type="video/mp4" />
                     </video>`;
         } else {
-            slid += `<div class="img" style="background-image: url(./images/technologies/${element.img}");></div>`;
+            slid += `<div class="img" style="background-image: url(./assets/images/technologies/${element.img}");></div>`;
         }
 
         slid += `</div></div></div>`;
@@ -236,30 +240,46 @@ function contactFill(contact) {
 }
 
 
+function footerFill(footer) {
+    document.querySelector(`footer .row div:nth-child(1) p:nth-child(2)`).innerHTML = footer.col_lg_4_1.p;
+
+    document.querySelector(`footer .row div:nth-child(2) h2`).innerHTML = footer.col_lg_4_2.h2;
+    document.querySelector(`footer .row div:nth-child(2) p:nth-of-type(1)`).innerHTML = footer.col_lg_4_2.p1;
+    document.querySelector(`footer .row div:nth-child(2) p:nth-of-type(2)`).innerHTML = footer.col_lg_4_2.p2;
+    document.querySelector(`footer .row div:nth-child(2) p:nth-of-type(3)`).innerHTML = footer.col_lg_4_2.p3;
+
+    document.querySelector(`footer .row div:nth-child(3) h2`).innerHTML = footer.col_lg_4_3.h2;
+    document.querySelector(`footer .row div:nth-child(3) a:nth-of-type(1)`).innerHTML = footer.col_lg_4_3.a1;
+    document.querySelector(`footer .row div:nth-child(3) a:nth-of-type(2)`).innerHTML = footer.col_lg_4_3.a2;
+    document.querySelector(`footer .row div:nth-child(3) a:nth-of-type(3)`).innerHTML = footer.col_lg_4_3.a3;
+    document.querySelector(`footer .row div:nth-child(3) a:nth-of-type(4)`).innerHTML = footer.col_lg_4_3.a4;
+    document.querySelector(`footer .row div:nth-child(3) a:nth-of-type(5)`).innerHTML = footer.col_lg_4_3.a5;
+    document.querySelector(`footer .row div:nth-child(3) a:nth-of-type(6)`).innerHTML = footer.col_lg_4_3.a6;
+}
+
 function changeLanguge() {
-    let luanguage = "ar";
-    if (luanguage = "ar") {
-        document.querySelector("body").setAttribute("dir", "rtl");
-        document.querySelector("body").style = "font-family:Helvetica;";
-        document.querySelector("html").style = "font-size:18px;";
-        theRequest.open(
-            "GET",
-            "./JS/JSON/arabic.json",
-            true
-        );
-    } else if (luanguage = "en") {
-        document.querySelector("body").setAttribute("dir", "ltr");
-        document.querySelector("body").style = "font-family:'Poppins', sans-serif;";
-        document.querySelector("html").style = "font-size:16px;";
-        theRequest.open(
-            "GET",
-            `./JS/JSON/english.json`,
-            true
-        );
-    }
+    document.querySelector("body").setAttribute("dir", "rtl");
+    document.querySelector("body").style = "font-family:Helvetica;";
+    document.querySelector("html").style = "font-size:18px;";
+    theRequest.open(
+        "GET",
+        "./JS/JSON/arabic.json",
+        true
+    );
+
+    // document.querySelector("body").setAttribute("dir", "ltr");
+    // document.querySelector("body").style = "font-family:'Poppins', sans-serif;";
+    // document.querySelector("html").style = "font-size:16px;";
+    // theRequest.open(
+    //     "GET",
+    //     `./JS/JSON/english.json`,
+    //     true
+    // );
+
 
     theRequest.send();
 }
+
 
 changeLanguge();
 fillContent();

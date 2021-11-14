@@ -18,7 +18,7 @@
         display: grid;
         grid-template-columns: auto auto auto auto;
         &::after {
-            content: url(../images/download/Subtract.png);
+            content: url(../assets/images/download/Subtract.png);
             position: absolute;
             right: 2vw;
             top: -4.88vh;

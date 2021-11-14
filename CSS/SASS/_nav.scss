@@ -7,13 +7,13 @@
             justify-content: space-between;
             width: 100%;
             .nav-links {
-                margin-left: 25px;
+                margin-inline-start: 25px;
                 display: flex;
                 align-items: center;
             }
 
             .nav-link {
-                margin-left: 10px;
+                margin-inline-start: 10px;
                 font-weight: 500;
                 font-size: 1.125rem;
                 line-height: 25px;
@@ -47,7 +47,7 @@
                     color: #75246f !important;
                     background-color: #fff;
                     border: 2px solid #75246f;
-                    margin-right: 20px;
+                    margin-inline-end: 20px;
                     transition: all 0.25s ease-in-out;
                     &:hover {
                         background: #75246f;
@@ -66,7 +66,7 @@
         .navbar-toggler {
             width: 16px;
             .navbar-toggler-icon {
-                background-image: url(../images/toggler.svg);
+                background-image: url(../assets/images/toggler.svg);
             }
             border: none;
             &:focus {

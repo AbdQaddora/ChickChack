@@ -28,7 +28,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(../images/about/Subtract.png);
+        background-image: url(../assets/images/about/Subtract.png);
         background-size: 704px 704px;
         p {
             color: #1b1464;
@@ -38,14 +38,14 @@
         }
 
         &::before {
-            content: url(../images/about/left_hand.png);
+            content: url(../assets/images/about/left_hand.png);
             position: absolute;
             left: 0;
             top: 169px;
         }
 
         &::after {
-            content: url(../images/about/right_handpng.png);
+            content: url(../assets/images/about/right_handpng.png);
             position: absolute;
             right: 0;
             top: 321px;

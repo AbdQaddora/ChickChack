@@ -10,11 +10,11 @@
             justify-content: flex-start;
         }
         .navbar-toggler {
-            margin-right: 20px;
+            margin-inline-end: 20px;
             height: 100%;
             display: contents;
             .navbar-toggler-icon {
-                background-image: url(../images/toggler.svg);
+                background-image: url(../assets/images/toggler.svg);
                 background-size: 110%;
             }
             border: none;
@@ -125,7 +125,7 @@
                         font-weight: 500;
                         font-size: 12px;
                         span {
-                            margin-left: 10px;
+                            margin-inline-start: 10px;
                         }
                     }
 
@@ -174,7 +174,7 @@
     }
 
     .swiper-pagination {
-        padding-left: 5vw;
+        padding-inline-start: 5vw;
         margin-bottom: 30px !important;
         .swiper-pagination-bullet {
             font-size: 14px;
@@ -201,7 +201,7 @@
             max-height: 500px;
             width: 95vw;
             height: 95vw;
-            background-image: url(../images/about/Subtract_mobile.png);
+            background-image: url(../assets/images/about/Subtract_mobile.png);
             background-size: 95vw 95vw;
             background-size: contain;
             background-repeat: no-repeat;
@@ -218,7 +218,7 @@
                 margin-top: 15px;
                 font-size: 16px;
                 width: 80%;
-                margin-left: 25px;
+                margin-inline-start: 25px;
                 text-align: left;
                 line-height: 1.5em;
             }

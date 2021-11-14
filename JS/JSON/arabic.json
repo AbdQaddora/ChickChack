@@ -115,7 +115,8 @@
                 "شارك تجربة التسوّق بشكل تفاعلي مع الأصدقاء"
             ],
             "ReadMore": "تميّز! إنضمَ الآن!",
-            "video": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4"
+            "video1": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4",
+            "video2": "./assets/video/02.mp4"
         },
         {
             "h2": "الذكاء ",
@@ -153,7 +154,8 @@
                 "خدمات تشمل الفنادق، العقارات، المواقع السياحية، مؤسسات التعليم وغيرها"
             ],
             "ReadMore": "تميّز! إنضمَ الآن!",
-            "video": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4"
+            "video1": "https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4",
+            "video2": "./assets/video/01.mp4"
         },
         {
             "h2": "المسح والتصميم ",
@@ -182,10 +184,10 @@
     },
     "download": {
         "h2": "التحميل الآن!        ",
-        "img1": "<img src='./images/download/download2.png'alt=''>",
-        "img2": "<img src='./images/download/download3.png'alt=''>",
-        "img3": "<img src='./images/download/download1.png'alt=''>",
-        "img4": "<img src='./images/download/download4.png'alt=''>"
+        "img1": "<img src='./assets/images/download/download2.png'alt=''>",
+        "img2": "<img src='./assets/images/download/download3.png'alt=''>",
+        "img3": "<img src='./assets/images/download/download1.png'alt=''>",
+        "img4": "<img src='./assets/images/download/download4.png'alt=''>"
     },
     "contact": {
         "theForm": {
@@ -214,6 +216,26 @@
                 "title": "قم بزيارتنا",
                 "p": "الإمارات العربية المتحدة ، الخليج التجاري ، برج القلعة # 601"
             }
+        }
+    },
+    "footer": {
+        "col_lg_4_1": {
+            "p": "CheckChack هي المنصة المثالية لتزدهر أعمالك: تنمية علامتك التجارية وتقديم خدماتك إلى المستقبل .."
+        },
+        "col_lg_4_2": {
+            "h2": "معلومات التواصل",
+            "p1": "<span>العنوان :</span>الإمارات العربية المتحدة ، الخليج التجاري ، برج القلعة # 601",
+            "p2": "<span>رقم الهاتف : </span><span  dir='ltr'>+971 4 576 2549</span>",
+            "p3": "<span>البريد الإلكتروني: </span>Info@chickchack.net"
+        },
+        "col_lg_4_3": {
+            "h2": "روابط مختصرة",
+            "a1": "الرئيسية",
+            "a2": "تواصل معنا",
+            "a3": "حول",
+            "a4": "Blog",
+            "a5": "سياسة الخصوصية",
+            "a6": "الشروط و الأحكام"
         }
     }
 }

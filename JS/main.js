@@ -64,8 +64,20 @@ swiper2.on('slideChange', function () {
         }
     }
 });
-
-let arr = tecControllerContentArr;
+let arr = []
+if (document.querySelector('body').getAttribute("dir") === "ltr") {
+    arr = ["Augmented Reality",
+        "AI & Machine Learning",
+        "Dashboard",
+        "Virtual Services",
+        "3D scaninng & modeling"];
+} else {
+    arr = ["تقنية الواقع المعزز",
+        "الذكاء الاصطناعي",
+        "لوحة القيادة",
+        "الخدمات الافتراضية",
+        "المسح ثلاثي الأبعاد"];
+}
 var swiper3 = new Swiper(".mySwiper3", {
     spaceBetween: 200,
     pagination: {
@@ -122,7 +134,9 @@ let allSlides = document.querySelectorAll(`.technologies .mySwiper3 .swiper-slid
 allSlides.forEach((x) => {
     x.style = 'height: 0;';
 });
-document.querySelector(`.technologies .mySwiper3 .swiper-slide:nth-child(${swiper3.activeIndex + 1}) .row`).style = 'height: 100%;';
+setTimeout(() => {
+    document.querySelector(`.technologies .mySwiper3 .swiper-slide:nth-child(${swiper3.activeIndex + 1}) .row`).style = 'height: 100%;';
+}, 0.3);
 swiper3.on('slideChange', function () {
     allSlides.forEach((x) => {
         x.style = 'height: 0;';

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/helveticaneuelt-arabic-55-roman.ttf");
+  src: url("../assets/fonts/helveticaneuelt-arabic-55-roman.ttf");
 }
 
 html {
@@ -112,7 +112,8 @@ body {
 }
 
 .navbar .container-fluid .navbar-nav .nav-links {
-  margin-left: 25px;
+  -webkit-margin-start: 25px;
+          margin-inline-start: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -122,7 +123,8 @@ body {
 }
 
 .navbar .container-fluid .navbar-nav .nav-link {
-  margin-left: 10px;
+  -webkit-margin-start: 10px;
+          margin-inline-start: 10px;
   font-weight: 500;
   font-size: 1.125rem;
   line-height: 25px;
@@ -161,7 +163,8 @@ body {
   color: #75246f !important;
   background-color: #fff;
   border: 2px solid #75246f;
-  margin-right: 20px;
+  -webkit-margin-end: 20px;
+          margin-inline-end: 20px;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -186,7 +189,7 @@ body {
 }
 
 .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
-  background-image: url(../images/toggler.svg);
+  background-image: url(../assets/images/toggler.svg);
 }
 
 .navbar .container-fluid .navbar-toggler:focus {
@@ -257,6 +260,7 @@ body {
   font-size: 4.5rem;
   line-height: 108%;
   color: #1b1464;
+  margin-bottom: 25px;
 }
 
 .sliderSection .mySwiper2 .row .content h2 span {
@@ -519,7 +523,8 @@ body {
 .gridSwiper .gridIndecator span {
   width: 12px;
   height: 12px;
-  margin-right: 4px;
+  -webkit-margin-end: 4px;
+          margin-inline-end: 4px;
   background: rgba(218, 218, 218, 0.67);
   border-radius: 50%;
 }
@@ -701,7 +706,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../images/about/Subtract.png);
+  background-image: url(../assets/images/about/Subtract.png);
   background-size: 704px 704px;
 }
 
@@ -713,14 +718,14 @@ body {
 }
 
 #about .content::before {
-  content: url(../images/about/left_hand.png);
+  content: url(../assets/images/about/left_hand.png);
   position: absolute;
   left: 0;
   top: 169px;
 }
 
 #about .content::after {
-  content: url(../images/about/right_handpng.png);
+  content: url(../assets/images/about/right_handpng.png);
   position: absolute;
   right: 0;
   top: 321px;
@@ -780,7 +785,7 @@ body {
 }
 
 .download div::after {
-  content: url(../images/download/Subtract.png);
+  content: url(../assets/images/download/Subtract.png);
   position: absolute;
   right: 2vw;
   top: -4.88vh;
@@ -838,7 +843,8 @@ body {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 15px;
+  -webkit-margin-end: 15px;
+          margin-inline-end: 15px;
 }
 
 .contact .col-lg-8 .row:last-child {
@@ -907,8 +913,10 @@ footer {
 
 footer .col-lg-4 {
   margin-bottom: 15px;
-  padding-left: 75px;
-  padding-right: 75px;
+  -webkit-padding-start: 75px;
+          padding-inline-start: 75px;
+  -webkit-padding-end: 75px;
+          padding-inline-end: 75px;
 }
 
 footer .col-lg-4 h2 {
@@ -972,7 +980,6 @@ footer .col-lg-4:nth-child(1) p:last-child {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-right: 70px;
 }
 
 footer .col-lg-4:nth-child(1) p:last-child a {
@@ -1013,6 +1020,8 @@ footer .col-lg-4:nth-child(3) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transform: translateX(40px);
+          transform: translateX(40px);
 }
 
 .mobileNav ul div:first-child span {
@@ -1052,13 +1061,14 @@ footer .col-lg-4:nth-child(3) {
             justify-content: flex-start;
   }
   .navbar .navbar-toggler {
-    margin-right: 20px;
+    -webkit-margin-end: 20px;
+            margin-inline-end: 20px;
     height: 100%;
     display: contents;
     border: none;
   }
   .navbar .navbar-toggler .navbar-toggler-icon {
-    background-image: url(../images/toggler.svg);
+    background-image: url(../assets/images/toggler.svg);
     background-size: 110%;
   }
   .navbar .navbar-toggler:focus {
@@ -1170,7 +1180,8 @@ footer .col-lg-4:nth-child(3) {
     font-size: 12px;
   }
   .gridSwiper .swiper-wrapper .swiper-slide div a span {
-    margin-left: 10px;
+    -webkit-margin-start: 10px;
+            margin-inline-start: 10px;
   }
   .gridSwiper .swiper-wrapper .swiper-slide div ul li {
     line-height: 25px;
@@ -1203,7 +1214,8 @@ footer .col-lg-4:nth-child(3) {
     padding: 7px 27px;
   }
   .swiper-pagination {
-    padding-left: 5vw;
+    -webkit-padding-start: 5vw;
+            padding-inline-start: 5vw;
     margin-bottom: 30px !important;
   }
   .swiper-pagination .swiper-pagination-bullet {
@@ -1226,7 +1238,7 @@ footer .col-lg-4:nth-child(3) {
     max-height: 500px;
     width: 95vw;
     height: 95vw;
-    background-image: url(../images/about/Subtract_mobile.png);
+    background-image: url(../assets/images/about/Subtract_mobile.png);
     background-size: 95vw 95vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1242,7 +1254,8 @@ footer .col-lg-4:nth-child(3) {
     margin-top: 15px;
     font-size: 16px;
     width: 80%;
-    margin-left: 25px;
+    -webkit-margin-start: 25px;
+            margin-inline-start: 25px;
     text-align: left;
     line-height: 1.5em;
   }

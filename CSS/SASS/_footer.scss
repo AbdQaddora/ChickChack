@@ -2,8 +2,8 @@ footer {
     padding: 60px;
     .col-lg-4 {
         margin-bottom: 15px;
-        padding-left: 75px;
-        padding-right: 75px;
+        padding-inline-start: 75px;
+        padding-inline-end: 75px;
         h2 {
             font-weight: 600;
             font-size: 1.25rem !important;
@@ -54,7 +54,6 @@ footer {
             display: flex;
             width: 100%;
             justify-content: space-between;
-            padding-right: 70px;
             a {
                 color: #1b1464;
                 font-size: 1.56rem;
