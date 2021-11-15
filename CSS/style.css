@@ -1273,7 +1273,6 @@ footer .col-lg-4:nth-child(3) {
     width: 80%;
     -webkit-margin-start: 25px;
             margin-inline-start: 25px;
-    text-align: left;
     line-height: 1.5em;
   }
   #about::before {
