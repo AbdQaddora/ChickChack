@@ -12,10 +12,12 @@
         div:first-child {
             display: flex;
             width: 100%;
+            padding-inline-start: 0;
+            padding-inline-end: 10%;
             justify-content: space-between;
             align-items: center;
-            transform: translateX(40px);
             span {
+                width: auto;
                 user-select: none;
                 cursor: pointer;
                 color: white;
@@ -31,6 +33,7 @@
             .nav-item {
                 .nav-link {
                     padding: 15px 0px;
+                    padding-inline-end:10%;
                     color: rgba(255, 255, 255, 0.8) !important;
                     &:hover {
                         color: white !important;

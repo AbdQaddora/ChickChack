@@ -1,6 +1,6 @@
 
 function mobileNavShow() {
-    if (document.querySelector(document.querySelector("body").getAttribute("dir") == "ltr")) {
+    if (document.querySelector("body").getAttribute("dir") == "ltr") {
         document.querySelector(".mobileNav").style = "left: 0vw;";
     } else {
         document.querySelector(".mobileNav").style = "right: 0vw;";
@@ -8,10 +8,10 @@ function mobileNavShow() {
 }
 
 function mobileNavhide() {
-    if (document.querySelector(document.querySelector("body").getAttribute("dir") == "ltr")) {
+    if (document.querySelector("body").getAttribute("dir") == "ltr") {
         document.querySelector(".mobileNav").style = "left: -70vw;";
     } else {
-        document.querySelector(".mobileNav").style = "right: -70vw;;";
+        document.querySelector(".mobileNav").style = "right: -70vw;";
     }
 }
 
@@ -65,18 +65,18 @@ swiper2.on('slideChange', function () {
     }
 });
 let arr = []
-if (document.querySelector('body').getAttribute("dir") === "ltr") {
-    arr = ["Augmented Reality",
-        "AI & Machine Learning",
-        "Dashboard",
-        "Virtual Services",
-        "3D scaninng & modeling"];
-} else {
+if (document.querySelector('body').getAttribute("dir") === "rtl") {
     arr = ["تقنية الواقع المعزز",
         "الذكاء الاصطناعي",
         "لوحة القيادة",
         "الخدمات الافتراضية",
         "المسح ثلاثي الأبعاد"];
+} else {
+    arr = ["Augmented Reality",
+        "AI & Machine Learning",
+        "Dashboard",
+        "Virtual Services",
+        "3D scaninng & modeling"];
 }
 var swiper3 = new Swiper(".mySwiper3", {
     spaceBetween: 200,

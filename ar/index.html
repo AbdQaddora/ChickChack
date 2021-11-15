@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- head logo and title-->
+    <link rel="shortcut icon" href="../assets/images/logo.svg" type="image/x-icon" />
+    <title>Chick Chack</title>
+
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- my Style -->
+    <link rel="stylesheet" href="../CSS/style.css" />
+
+    <!--  -->
+    <style>
+        html {
+            font-size: 18px;
+        }
+
+        body {
+            font-family: Helvetica;
+        }
+    </style>
+</head>
+
+<body dir="rtl">
+    <!-- <div class="flag">
+        <button onclick="english()"><img src="../assets/images/flag/english.png" alt="" srcset="" width="40px"
+                height="40px"></button>
+        <button onclick="arabic()"><img src="../assets/images/flag/arabia.png" alt="" srcset="" width="40px"
+                height="40px"></button>
+    </div> -->
+
+    <!-- start nav bar -->
+    <img src="../assets/images/top_oval.svg" class="topOval" alt="">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler hiddenOnPC" onclick="mobileNavShow()" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="mobileNav hiddenOnPC">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div>
+                        <div>
+                            <img src="../assets/images/logo.svg" height="73px" width="73px" />
+                            <div class="closeNav" onclick="mobileNavhide()">
+                                <span class="material-icons">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-links">
+                        <li class="nav-item" onclick="mobileNavhide()">
+                            <a class="nav-link" aria-current="page" href="#">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item" onclick="mobileNavhide()">
+                            <a class="nav-link" href="#">تعاون</a>
+                        </li>
+                        <li class="nav-item" onclick="mobileNavhide()">
+                            <a class="nav-link" href="#Technologies">تقنيّات</a>
+                        </li>
+                        <li class="nav-item" onclick="mobileNavhide()">
+                            <a class="nav-link" href="#about">من نحن</a>
+                        </li>
+                        <li class="nav-item" onclick="mobileNavhide()">
+                            <a class="nav-link" href="#">تسجيل دخول</a>
+                        </li>
+                        <li class="nav-item" onclick="mobileNavhide()">
+                            <a class="nav-link" href="#">انضم الآن</a>
+                        </li>
+                        <li class="nav-item" onclick="mobileNavhide()">
+                            <a class="nav-link" href="../">English <img src="../assets/images/flag/arabia.png"></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+
+            <img src="../assets/images/logo.svg" height="73px" width="73px" />
+            <div class="navbar-collapse hiddenOnMobile" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div class="nav-links">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تعاون</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تقنيّات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../">English
+                                <img src="../assets/images/flag/arabia.png" height="32px" width="32px"></a>
+                        </li>
+                    </div>
+                    <div class="nav-btn">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تسجيل دخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link main_back" href="#">انضم الآن</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- start Header -->
+    <section class="container-fluid sliderSection">
+        <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-lg-7 wow animate__animated animate__fadeInLeft">
+                            <h2> مرآتك
+                                <span>لأبعاد جديدة</span>
+                            </h2>
+                            <p>منصتك الإجتماعية الرّائدة ها هنا لتغيّر نظرتك عن التّواصل، التّفاعل والإبداع.إنخرط في
+                                عالم التواصل الإجتماعي ذو التّقنيات السّباقة، تمتّع بعالمك الإفتراضي في راحة يديك وأطلق
+                                العنان لمخيّلتك
+                            </p>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="col-lg-5 wow animate__animated animate__fadeInRight">
+                            <div class="images">
+                                <div class="indecators"></div>
+                                <div class="img" style="background-image: url('../assets/images/header/img1.png') ;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-lg-7">
+                            <h2>اتصل، التقط<span> وأبدع</span></h2>
+                            <p><span>منصة تواصل إجتماعي غير مسبوقة!</span><br />
+                                أنشئ ملفك الشخصي واخلق بعدًا يظهر تميّزك. خصص شخصيتك ثلاثية الأبعاد، صمم مساحتك
+                                الإفتراضية كما تحبّ، التقط، شارك، اكسب الإعجاب والإحترام وعزز من حضورك الإجتماعي
+                            </p>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="images">
+                                <div class="indecators"></div>
+                                <div class="img" style="background-image: url('../assets/images/header/img2.png') ;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-lg-7">
+                            <h2>تخيّل، أنشئ <span>وتميّز</span>
+                            </h2>
+                            <p class="hasUlAftter"><span>أنشئ بعدك الإفتراضي وصمّمه حسب رغبتك عبر مميزات شيك شاك:</span>
+                            </p>
+                            <ul>
+                                <li>نظام بناء مستقبلي يتيح لك الإنغماس في عالمك الخياليّ</li>
+                                <li>قم ببناء منزلك، محيطك أو متجرك الخاص وعدّلهم حسب تفضيلاتك</li>
+                                <li>شارك إبداعك مع العالم! قم بدعوة أصدقاءك أو انضم إليهم في أبعادهم الخاصة أو قم بزيارة
+                                    عالم مؤثرك المفضل وتعرّف إليه</li>
+                            </ul>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="images">
+                                <div class="indecators"></div>
+                                <div class="img" style="background-image: url('../assets/images/header/img3.png') ;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-lg-7">
+                            <h2>استقبل، تفاعل <span>واستمتع</span>
+                            </h2>
+                            <p>قم بدعوة الأصدقاء والعائلة من جميع أنحاء العالم للإستمتاع بالأنشطة الإجتماعية المختلفة،
+                                يمكنكم استضافة أو حضور اللّقاءات والتجمعات، ممارسة الألعاب سويًّا، استكشاف العالم
+                                الإفتراض وزيارة عوالمكم الفريدة. كما يمكنكم أيضًا التّسوّق سويًّا ومشاركة تجربة تفاعلية
+                                لا مثيل لها</p>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="images">
+                                <div class="indecators"></div>
+                                <div class="img" style="background-image: url('../assets/images/header/img4.png') ;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-lg-7">
+                            <h2>جرّب قبل أن<span>تشتري!</span>
+                            </h2>
+                            <p>استمتع بتجربة التّسوّق الإجتماعي المدعومة بأحدث التقنيّات مع Check Chack تسوّق برفقة
+                                أصدقائك، تصفّح المنتجات والخدمات، قم بعرضها بنظام ال3D أو جربها في الواقع المعزز! وإن
+                                أعجبتك قم بشرائها بشكل سهل وبطريقة دفع آمنة، حيث سيتم توصيلها إلى باب منزلك</p>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="images">
+                                <div class="indecators"></div>
+                                <div class="img" style="background-image: url('../assets/images/header/img5.png') ;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="circle"></div>
+    </section>
+
+    <!-- start first Section (Grid) -->
+    <div class="container-fluid">
+        <div class="hiddenOnPC swiper mySwiper gridSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <h3>تعاون، <span>ازدهر</span></h3>
+                        <p>CheckChack هي المنصة المثالية لازدهار عملك، تنميّة علامتك التجارية، تحديث خدماتك، زيادة
+                            إيراداتك وتأمين الوصول إلى جمهور أوسع. توفّر CheckChack لأصحاب الأعمال ومزوّدي الخدمات لوحة
+                            القيادة الأكثر تقدمًا للتّحكم بشكل كامل وفعّال في كل جوانب الأعمال والتّجارة</p>
+                        <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                        <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <h3>حقق <span>أهدافك</span></h3>
+                        <ul>
+                            <li>قم بزيادة مبيعاتك</li>
+                            <li>اجذب العملاء بتجربة تسوّق تفاعليّة فريدة</li>
+                            <li>قلل من تبديل وإعادة البضائع عبر تقنية التجربة عبر الواقع الإفتراضي</li>
+                            <li>وسّع حضورك على منصات التواصل الإجتماعي وسيطر على كل جوانب عملك</li>
+                            <li>وسّع نطاق وصول جمهورك: انضمّ إلى مراكز تسوّق شهيرة أو اختار استضافة عملك في مساحات
+                                افتراضية خاصّة بمشاهير ومؤثّرين</li>
+                        </ul>
+                        <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                        <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <h3>تطوّر، <span>تقدّم</span></h3>
+                        <ul>
+                            <li>قم بتصميم وإنشاء متجرك أو مركز خدماتك</li>
+                            <li>إختر موقعك المفضّل، مثل مراكز التسوق الإفتراضية أو صالات العرض والمعارض وغيرها</li>
+                            <li>اعرض منتجاتك وخدماتك بشكل ثلاثي الأبعاد</li>
+                            <li>اعرض تجربة المنتجات بتنقية الواقع المعزز</li>
+                            <li>حمل قائمة السلّع والخدمات بنقرة زرّ</li>
+                            <li>رتب متجرك بحسب تفضيلاتك، اضف مكاتب المساعدة أو لافتات أو لوحات</li>
+                        </ul>
+                        <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                        <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div>
+                        <h3>وسّع آفاقك <span>واستفد</span></h3>
+                        <ul>
+                            <li>استفد من روبوت ذاتي التّعلّم، يعتمد على الذكاء الإصطناعي للإعتناء بشؤون العملاء وتأمين
+                                حسن الأداء باستمرار</li>
+                            <li>قدّم خدمات عبر الإنترنت كخدمات السّفر، الحجوزات والإشتراكات</li>
+                            <li>أضف طرق الدفع الآمنة واربط عملك بشركات الشحن والتوصيل التي تختارها</li>
+                            <li>قم بتنمية علامتك التّجارية عبر حلول تسويقيّة واسعة النّطاق تشمل مساحات عامة افتراضية
+                                للخدمات الدّعائية وعرض الإعلانات</li>
+                        </ul>
+                        <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                        <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="hiddenOnPC gridIndecator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid grid hiddenOnMobile">
+        <div class="twoPart wow animate__animated animate__fadeInTopLeft">
+            <div>
+                <h3>تعاون، <span>ازدهر</span></h3>
+                <p>CheckChack هي المنصة المثالية لازدهار عملك، تنميّة علامتك التجارية، تحديث خدماتك، زيادة
+                    إيراداتك وتأمين الوصول إلى جمهور أوسع. توفّر CheckChack لأصحاب الأعمال ومزوّدي الخدمات لوحة
+                    القيادة الأكثر تقدمًا للتّحكم بشكل كامل وفعّال في كل جوانب الأعمال والتّجارة</p>
+                <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+            </div>
+        </div>
+        <div class="twoPart wow animate__animated animate__fadeInBottomLeft">
+            <div>
+                <h3>حقق <span>أهدافك</span></h3>
+                <ul>
+                    <li>قم بزيادة مبيعاتك</li>
+                    <li>اجذب العملاء بتجربة تسوّق تفاعليّة فريدة</li>
+                    <li>قلل من تبديل وإعادة البضائع عبر تقنية التجربة عبر الواقع الإفتراضي</li>
+                    <li>وسّع حضورك على منصات التواصل الإجتماعي وسيطر على كل جوانب عملك</li>
+                    <li>وسّع نطاق وصول جمهورك: انضمّ إلى مراكز تسوّق شهيرة أو اختار استضافة عملك في مساحات
+                        افتراضية خاصّة بمشاهير ومؤثّرين</li>
+                </ul>
+                <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+            </div>
+        </div>
+
+        <div class="wow animate__animated animate__fadeInDown">
+            <div>
+                <h3>تطوّر، <span>تقدّم</span></h3>
+                <ul>
+                    <li>قم بتصميم وإنشاء متجرك أو مركز خدماتك</li>
+                    <li>إختر موقعك المفضّل، مثل مراكز التسوق الإفتراضية أو صالات العرض والمعارض وغيرها</li>
+                    <li>اعرض منتجاتك وخدماتك بشكل ثلاثي الأبعاد</li>
+                    <li>اعرض تجربة المنتجات بتنقية الواقع المعزز</li>
+                    <li>حمل قائمة السلّع والخدمات بنقرة زرّ</li>
+                    <li>رتب متجرك بحسب تفضيلاتك، اضف مكاتب المساعدة أو لافتات أو لوحات</li>
+                </ul>
+                <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+            </div>
+        </div>
+        <div class="wow animate__animated animate__fadeInUp">
+            <div>
+                <h3>وسّع آفاقك <span>واستفد</span></h3>
+                <ul>
+                    <li>استفد من روبوت ذاتي التّعلّم، يعتمد على الذكاء الإصطناعي للإعتناء بشؤون العملاء وتأمين
+                        حسن الأداء باستمرار</li>
+                    <li>قدّم خدمات عبر الإنترنت كخدمات السّفر، الحجوزات والإشتراكات</li>
+                    <li>أضف طرق الدفع الآمنة واربط عملك بشركات الشحن والتوصيل التي تختارها</li>
+                    <li>قم بتنمية علامتك التّجارية عبر حلول تسويقيّة واسعة النّطاق تشمل مساحات عامة افتراضية
+                        للخدمات الدّعائية وعرض الإعلانات</li>
+                </ul>
+                <p><span>مهتمّ؟ تعاون معنا!</span></p>
+                <a class="main_back">تميّز! إنضمَ الآن!<span class='material-icons'>west</span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- start secound section Technologies -->
+    <div id="Technologies"></div>
+    <div class="technologies">
+        <div class="swiper-pagination TecController"></div>
+        <div class="swiper mySwiper3 container-fluid">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-md-6 wow animate__animated animate__bounceInLeft">
+                            <h2>تجربة المنتجات <span>بتقنية الواقع المعزز</span>
+                            </h2>
+                            <div>
+                                <p>طريقة سبّاقة لإضافة الواقعية إلى تجربة التّسوق</p>
+                                <ul>
+                                    <li>قم بإضافة أقنعة الوجه والفلاتر بتقنية الواقع المعزز على مقاطع الفيديو الخاصة بك
+                                    </li>
+                                    <li>جرّب الملابس، الأحذية، مستحضرات التبرّج، النّظارات، الأثاث وغيرها من المنتجات
+                                        قبل شرائها</li>
+                                    <li>شارك تجربة التسوّق بشكل تفاعلي مع الأصدقاء</li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="images col-md-6 wow animate__animated animate__bounceInRight video">
+                            <video autoplay muted loop width="100%" id="vid1">
+                                <source src="../assets/video/02.mp4" type="video/mp4" />
+                                <source
+                                    src="https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/02.mp4"
+                                    type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-md-6">
+                            <h2>الذكاء <span>الإصطناعي</span>
+                            </h2>
+                            <div>
+                                <p>ميزة دعم العملاء الأكثر تقدمًا من النّاحية التكنولوجية</p>
+                                <ul>
+                                    <li>أضف روبوتات ذاتية التّعلّم إلى متجرك</li>
+                                    <li>إجمع البيانات التحليلية وقم بتحسين خدماتك</li>
+                                    <li>قدّم دعم سريع، فعّال وسهل لعملائك</li>
+                                    <li>خصص مظهر وخدمات الروبوت بحسب حاجتك ليتناسب مع علامتك التجارية واستفد منه للتسويق
+                                        والبيع وخدمات أخرى</li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="images col-md-6">
+                            <div class="img" style="background-image: url('../assets/images/technologies/tec2.png') ;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-md-6">
+                            <h2>لوحة القيادة</h2>
+                            <div>
+                                <p>لوحة تحكم متطوّرة وشاملة</p>
+                                <ul>
+                                    <li>ميزة حصريّة تتيح لك إضافة نموذج منتجك بسهولة، تخصيصه وتعديله بحسب رغبتك أو
+                                        اختيار نماذج من مكتبة قوالب ضخمة تناسب جميع احتياجاتك</li>
+                                    <li>تحكّم في كل جوانب أنشطتك العمليّة</li>
+                                    <li>حمّل مخزونك وخدماتك بشكل سريع وفعّال واعرضها بأحدث تقنيّات الأبعاد الثلاثية
+                                        والواقع المعزّز</li>
+                                    <li>رتّب وعدّل متجرك أو صالة العرض، راقب العمل بشكل مباشر وقم بالتّحديث والإدارة من
+                                        أي مكان في العالم</li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="images col-md-6">
+                            <div class="img" style="background-image: url('../assets/images/technologies/tec3.png') ;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-md-6">
+                            <h2>الخدمات <span>الإفتراضية</span>
+                            </h2>
+                            <div>
+                                <p>أجعل جميع أنشطتك التّجارية إفتراضية</p>
+                                <ul>
+                                    <li>استضف الأحداث، المؤتمرات، التّجمعات والحفلات الإفتراضية في بيئات قابلة للتخصيص
+                                        والتّعديل بحسب الحاجة، إضافة إلى قوالب جاهزة تشمل إدارة كاملة من وراء الكواليس
+                                    </li>
+                                    <li>خدمات وحلول التجارة الالكترونية</li>
+                                    <li>حوّل مكانك إلى عالم ثلاثي الأبعاد واقعي وتفاعلي</li>
+                                    <li>خدمات تشمل الفنادق، العقارات، المواقع السياحية، مؤسسات التعليم وغيرها</li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="images col-md-6">
+                            <video autoplay muted loop width="100%" id="vid2">
+                                <source
+                                    src="https://chickchack.s3.eu-west-2.amazonaws.com/new-landing-page-assets/01.mp4"
+                                    type="video/mp4" />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row">
+                        <div class="content col-md-6">
+                            <h2>المسح والتصميم <span>ثلاثيّ الأبعاد </span>
+                            </h2>
+                            <div>
+                                <p>وكأنه الواقع الحقيقي!</p>
+                                <ul>
+                                    <li>امسح وجهك بتقنية ال3D</li>
+                                    <li>أنشئ شخصيتك الثلاثية الأبعاد بشكل واقعي</li>
+                                    <li>قم بمسح أي منتج واستيراده إلى نظامنا بجودات متعددة (low poly, high poly)
+                                    </li>
+                                    <li>استمتع بتجربة إجتماعية غامرة</li>
+                                </ul>
+                            </div>
+                            <a href="" class="btn main_back">تميّز! إنضمَ الآن!</a>
+                        </div>
+                        <div class="images col-md-6">
+                            <div class="img" style="background-image: url('../assets/images/technologies/tec2.png') ;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- about us section -->
+
+    <section id="about">
+        <h2 class="wow animate__animated animate__headShake">من نحن؟</h2>
+        <img class="cursor" src="../assets/images/about/Cursor V1.png" alt="">
+        <div class="content">
+            <p>إتخذت CheckChack الدّور الرّيادي في تحقيق نهج إجتماعي فريد، متقدّم ومتميّز. لتحقيق هذه المهمّة الصّعبة
+                اتجهنا للمثابرة والإبتكار عبر دمج أحدث التّقنيات كالواقع المعزّز، الواقع الإفتراضي والمسح الثلاثي
+                الأبعاد. طموحنا أن نقدّم لكم منصّة جديرة بحضوركم
+            </p>
+        </div>
+    </section>
+
+    <!-- Download section -->
+    <div class="container-fluid">
+        <section class="download">
+            <h2 class="wow animate__animated animate__headShake">التحميل الآن!</h2>
+            <div><a href="" class="wow animate__animated animate__fadeInDown"><img
+                        src="../assets/images/download/download2.png" alt=""></a>
+                <a href="" class="wow animate__animated animate__fadeInDown"><img
+                        src="../assets/images/download/download3.png" alt=""></a>
+                <a href="" class="wow animate__animated animate__fadeInDown"><img
+                        src="../assets/images/download/download1.png" alt=""></a>
+                <a href="" class="wow animate__animated animate__fadeInDown"><img
+                        src="../assets/images/download/download4.png" alt=""></a>
+            </div>
+        </section>
+    </div>
+    <div class="footerBack">
+        <section class="container-fluid contact">
+            <div class="row">
+                <div class="col-lg-8 col-md-6 container-fluid">
+                    <form>
+                        <div class="row" id="contact">
+                            <h3>تواصل معنا</h3>
+                            <h2>ارسل رسالة</h2>
+                            <p>نحن إجتماعيون في صميمنا! تواصل معنا</p>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="بريدك الإلكتروني" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="رقم موبايلك" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3">
+                                <textarea class="form-control" placeholder="رسالتك" id="Message" style="height: 100px"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn main_back mb-3">ارسل الان</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="myCard">
+                        <h2>ابقى على تواصل</h2>
+                        <p>نحن هنا من أجلك ، فقط اتصل بنا</p>
+                        <div class="innerCard">
+                            <span class="material-icons">
+                                email
+                            </span>
+                            <div class="content">
+                                <h3>بريدنا الإلكتروني</h3>
+                                <p>
+                                    <span>
+                                        info@chickchack.net
+                                    </span>
+                                    <br>
+                                    <span>
+                                        info@chickchack.net
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerCard">
+                            <span class="material-icons">
+                                phone
+                            </span>
+                            <div class="content">
+                                <h3>الهاتف الخاص بنا</h3>
+                                <p>
+                                    <span>
+                                        +971 4 576 2549
+                                    </span>
+                                    <br>
+                                    <span>
+                                        +971 4 576 2549
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="innerCard">
+                            <span class="material-icons">
+                                place
+                            </span>
+                            <div class="content">
+                                <h3>قم بزيارتنا</h3>
+                                <p>الإمارات العربية المتحدة ، الخليج التجاري ، برج القلعة # 601</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-5">
+                    <p class="footerImg"><img src="../assets/images/logo.svg" alt="" srcset=""></p>
+                    <p>CheckChack هي المنصة المثالية لتزدهر أعمالك: تنمية علامتك التجارية وتقديم خدماتك إلى المستقبل ..
+                    </p>
+                    <p>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-facebook-f"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h2>معلومات التواصل</h2>
+                    <p><span>العنوان :</span>الإمارات العربية المتحدة ، الخليج التجاري ، برج القلعة # 601</p>
+                    <p><span>رقم الهاتف : </span><span dir='ltr'>+971 4 576 2549</span></p>
+                    <p><span>البريد الإلكتروني: </span>Info@chickchack.net</p>
+                </div>
+                <div class="col-lg-4 col-md-3">
+                    <h2>روابط مختصرة</h2>
+                    <div>
+                        <a href="#">الرئيسية</a>
+                        <a href="#contact">تواصل معنا</a>
+                        <a href="#about">حول</a>
+                        <a href="#">Blog</a>
+                        <a href="#">سياسة الخصوصية</a>
+                        <a href="#">الشروط و الأحكام</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Language JS -->
+    <!-- <script src="../JS/LanguageChange.js"></script> -->
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- wow js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- My script -->
+    <script src="../JS/main.js"></script>
+</body>
+
+</html>
