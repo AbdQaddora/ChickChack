@@ -1,4 +1,5 @@
-
+let TecControllerSpans = [];
+let TecControllerSpansPxForMove = [];
 function mobileNavShow() {
     if (document.querySelector("body").getAttribute("dir") == "ltr") {
         document.querySelector(".mobileNav").style = "left: 0vw;";
@@ -93,41 +94,37 @@ var swiper3 = new Swiper(".mySwiper3", {
         }
     }
 });
+// for first time
+window.onload = () => {
+    TecControllerSpans = document.querySelectorAll(`.TecController span`)
+    let tempArr = [];
+    TecControllerSpans.forEach((e) => {
+        tempArr.push(e.offsetWidth);
+    });
+
+    for (let j = 0; j < TecControllerSpans.length; j++) {
+        let sum = 0;
+        for (let x = 0; x < j; x++) {
+            sum += tempArr[x];
+        }
+        TecControllerSpansPxForMove.push(sum);
+    }
+    if (window.innerWidth > tempArr[tempArr.length - 1] + tempArr[tempArr.length - 2] + (tempArr[tempArr.length - 3] / 2)) {
+        TecControllerSpansPxForMove[TecControllerSpansPxForMove.length - 1] = TecControllerSpansPxForMove[TecControllerSpansPxForMove.length - 2]
+    }
+    console.log(TecControllerSpansPxForMove);
+}
 
 
 function TecSlidChangerMobile() {
     currentTecSlid = swiper3.activeIndex + 1;
-    let movePx = 200;
-    if (window.innerWidth > 450 && window.innerWidth < 480) {
-        movePx = 180;
-    } else if (window.innerWidth > 480 && window.innerWidth < 550) {
-        movePx = 160;
-    } else if (window.innerWidth > 550 && window.innerWidth < 600) {
-        movePx = 140;
-    } else if (window.innerWidth > 600 && window.innerWidth < 650) {
-        movePx = 120;
-    } else if (window.innerWidth > 650 && window.innerWidth < 700) {
-        movePx = 100;
-    } else if (window.innerWidth > 700 && window.innerWidth < 750) {
-        movePx = 80;
-    } else if (window.innerWidth > 750 && window.innerWidth < 800) {
-        movePx = 70;
-    } else if (window.innerWidth > 800 && window.innerWidth < 850) {
-        movePx = 60;
-    } else if (window.innerWidth > 850) {
-        movePx = 40;
-    }
     let direction = "";
     if (document.querySelector("body").getAttribute("dir") == "ltr") {
         direction = "-";
     } else {
         direction = "+";
     }
-    if (currentTecSlid < 5) {
-        document.querySelector(`.TecController`).style = `transform: translateX(${direction}${movePx * (currentTecSlid - 1)}px);`;
-    } else {
-        document.querySelector(`.TecController`).style = `transform: translateX(${direction}${movePx * (currentTecSlid - 2) + 35}px);`;
-    }
+    document.querySelector(`.TecController`).style = `transform: translateX(${direction}${TecControllerSpansPxForMove[currentTecSlid - 1]}px);`;
 }
 
 let allSlides = document.querySelectorAll(`.technologies .mySwiper3 .swiper-slide .row`)
@@ -152,3 +149,4 @@ window.addEventListener('resize', () => {
         TecSlidChangerMobile();
     }
 })
+
